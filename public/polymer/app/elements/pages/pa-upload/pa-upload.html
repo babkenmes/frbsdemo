@@ -1,0 +1,138 @@
+<dom-module id="pa-upload">
+  <template>
+    <style>
+    :host {
+      display: block;
+    }
+    </style>
+    <div>
+      <input type="file" id="files" multiple="true">
+      <button id="upload">submit</button>
+    </div>
+    <div id="images">
+    </div>
+    <paper-toast id="toast1" duration="0" text="The file(s) was uploaded successfully">
+      <paper-button onclick="document.querySelector('#toast1').toggle()" class="yellow-button">Close</paper-button>
+    </paper-toast>
+  </template>
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'pa-upload',
+
+      validate: function(file) {
+        var _validFileExtensions = [".jpg", ".jpeg", ".bmp", ".gif", ".png"];
+
+        return true;
+      },
+
+      upload: function(file) {
+        var self = this;
+        var success = function(snapshot) {
+          var progress = parseInt((snapshot.b / snapshot.h) * 100);
+
+
+          $('#submit').text(progress)
+          switch (snapshot.state) {
+            case firebase.storage.TaskState.PAUSED: // or 'paused'
+              $('#submit').text('Upload is paused')
+              break;
+            case firebase.storage.TaskState.RUNNING: // or 'running'
+              $('#submit').text(progress)
+              break;
+          }
+        };
+
+        var error = function(error) {
+          switch (error.code) {
+            case 'storage/unauthorized':
+              
+              break;
+            case 'storage/canceled':
+              
+              break;
+            case 'storage/unknown':
+              
+              break;
+          }
+        };
+
+        var complete = function(uploadTask) {
+          var downloadURL = uploadTask.snapshot.downloadURL;
+          self.writeUrlDb(downloadURL);
+          var img = self.createImage(downloadURL);
+          $('#images').append(img);
+          document.getElementById("files").value = "";
+          self.$$('#toast1').open();
+          $('#submit').text('Submit');
+        };
+        var storageRef = firebase.storage().ref(),
+          uploadTask = storageRef.child('files/' + file.name).put(file);
+        uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, success, error, function() {
+          complete(uploadTask)
+        });
+
+      },
+
+      initEvent: function(eventType, item, handler) {
+        
+        $('body').on(eventType, item, handler);
+      },
+
+      getFiles: function() {
+        if ($('#files').prop('files').length != 0) {
+          for (var i = 0; i < $('#files').prop('files').length; i++) {
+            var file = $('#files').prop('files')[i];
+            if (this.validate(file)) {
+              this.upload(file);
+            } else {
+              
+            }
+          }
+        } else {
+          
+        }
+      },
+      getUrls: function() {
+        var ref = firebase.database().ref('imagesUrl/');
+        var promise = new Promise(function(resolve, reject) {
+          ref.on('value', function(data) {
+            resolve(data.val())
+          }, function(error) {
+            reject(error.code)
+          })
+        })
+        return promise;
+      },
+      writeUrlDb: function(url) {
+        firebase.database().ref('imagesUrl/').push({
+          url: url
+        })
+      },
+      createImage: function(src) {
+        var img = document.createElement('img');
+        img.src = src;
+        return img;
+      },
+      ready: function() {
+        var self = this;
+        var a = this.getUrls();
+        a.then(function(data) {
+          for (var index in data) {
+            var img = self.createImage(data[index].url);
+            $('#images').append(img);
+          }
+
+        })
+
+        this.initEvent('click', '#upload', function() {
+          self.getFiles()
+        });
+      },
+
+    });
+  })();
+  </script>
+</dom-module>

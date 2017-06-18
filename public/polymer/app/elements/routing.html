@@ -1,0 +1,54 @@
+<script src="../../bower_components/page/page.js"></script>
+<script>
+  window.addEventListener('WebComponentsReady', function() {
+
+    function scrollToTop(ctx, next) {
+      app.scrollPageToTop();
+      next();
+    }
+
+    page('/:type', scrollToTop, function( data ) {
+      
+      app.route = data.params.type;
+      app.params = { "type" : data.params.type };
+
+    });
+
+    page('/', scrollToTop, function( data ) {
+      
+      app.route = 'components';
+      app.params = { "type" : 'components' };
+    });
+    page('/#!/', scrollToTop, function( data ) {
+      
+      app.route = 'components';
+      app.params = { "type" : 'components' };
+    });
+
+    page('/edit/:type/:path', scrollToTop, function( data ) {
+      
+      app.params = { 'type' : data.params.type,'path': data.params.path };
+      app.route = 'edit';
+    });
+    page('/new/:path/:key', scrollToTop, function( data ) {
+      
+      app.params = { 'path': data.params.path,'key': data.params.key };
+      app.route = 'new';
+    });
+
+    page('/upload', scrollToTop, function( data ) {
+      app.route = 'upload';
+    });
+
+    page('*', scrollToTop, function( data ) {
+      
+      app.route = 'not-found';
+    });
+
+    // add #! before urls
+    page({
+      hashbang: true
+    });
+
+  });
+</script>

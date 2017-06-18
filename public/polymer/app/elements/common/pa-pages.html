@@ -1,0 +1,62 @@
+<dom-module id="pa-pages">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      iron-pages {
+        padding: 24px 16px 56px;
+        min-height: 100%;
+        box-sizing: border-box;
+      }
+
+      @media (min-width: 640px) {
+        iron-pages {
+          padding: 24px 36px 56px;
+        }
+      }
+    </style>
+
+    <iron-pages attr-for-selected="data-route" selected="{{route}}">
+      
+
+      <section data-route="not-found">
+        <pa-page-title title="Page Not Found"></pa-page-title>
+        <pa-not-found></pa-not-found>
+      </section>
+
+      <section data-route="edit">
+        <pa-page-title title="Edit"></pa-page-title>
+        <pa-edit route="{{route}}"></pa-edit>
+      </section>
+
+      <section data-route="new">
+        <pa-page-title title="New"></pa-page-title>
+        <pa-edit route="{{route}}"></pa-edit>
+      </section>
+      <section data-route="upload">
+        <pa-page-title title="Upload"></pa-page-title>
+        <pa-upload route="{{route}}"></pa-edit>
+      </section>
+      <section data-route$="{{route}}">
+        <pa-page-title title$="{{getRoute(route)}}"></pa-page-title>
+        <pa-tree route="{{route}}"></pa-tree>
+      </section>
+    </iron-pages>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'pa-pages',
+        getRoute: function( route ) {
+          console.log(route);
+          return route;
+        }
+      });
+
+
+    })();
+  </script>
+
+</dom-module>

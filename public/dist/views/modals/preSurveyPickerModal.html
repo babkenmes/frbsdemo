@@ -1,0 +1,62 @@
+﻿<div class="inmodal test-picker-modal">
+
+    <div class="modal-header">
+        Выберите Опрос
+        <button type="button" class="close" ng-click="surveyPickerModalCancelAction()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <label>Опросы</label>
+                <div class="input-group">
+                    <input type="text" ng-model="surveySearch" class="form-control" placeholder="Search">
+                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+            <br />
+            <div class="col-md-12 doctorPicker">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Кол. Вопросов</th>
+                            <th>Название</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="survey in surveys | filter:surveySearch" ng-click="selectSurvey(survey)" ng-class="{selectedRow: survey._id == presentation.survey._id}">
+                            <td>{{$index + 1}}</td>
+                            <td>{{survey.questions.length}}</td>
+                            <td>{{survey.title}}</td>
+
+                        </tr>
+                        <tr ng-show="!surveys.length">
+                            <td>Не найдено</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+
+        <div class="pull-right">
+            <button type="button" class="btn btn-default m-t-n-xs" ng-click="surveyPickerModalCancelAction()">
+
+                Отмена
+
+            </button>
+            <button type="button" ng-disabled="! (surveys.length && presentation.survey && presentation.survey._id))" class="btn btn-primary m-t-n-xs" ng-click="surveyPickerModalSaveAction()">
+                Сохранить
+            </button>
+        </div>
+
+    </div>
+
+</div>

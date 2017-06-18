@@ -1,0 +1,73 @@
+ul.json-dict, ol.json-array {
+  list-style-type: none;
+  margin: 0 0 0 1px;
+  border-left: 1px dotted #ccc;
+  padding-left: 2em;
+}
+.json-string {
+  color: #0B7500;
+}
+.json-literal {
+  color: #1A01CC;
+  font-weight: bold;
+}
+
+/* Toggle button */
+a.json-toggle {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+a.json-toggle:focus {
+  outline: none;
+}
+a.json-toggle:before {
+  color: #aaa;
+  content: "\25BC"; /* down arrow */
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  left: -1em;
+}
+a.json-toggle.collapsed:before {
+  content: "\25B6"; /* left arrow */
+}
+
+/* Collapsable placeholder links */
+a.json-placeholder {
+  color: #aaa;
+  padding: 0 1em;
+  text-decoration: none;
+}
+a.json-placeholder:hover {
+  text-decoration: underline;
+}
+.icon {
+  width: 10px;
+  height: 10px;
+  font-size: 13px !important;
+  display: inline-block;
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.edit-icon {
+  color: #8bc34a;
+}
+.remove-icon {
+  color: #8b0000;
+}
+.new-icon {
+  color: #009688;
+}
+.sort-icon {
+  color: #3f51b5;
+}
+.json-placeholder + .new-icon,
+.json-placeholder + .new-icon + .edit-icon, 
+.json-placeholder + .new-icon + .edit-icon + .remove-icon
+.json-placeholder + .new-icon + .edit-icon + .remove-icon + .sort-icon {
+  display: none;
+}
+
+

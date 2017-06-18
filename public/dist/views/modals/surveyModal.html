@@ -1,0 +1,87 @@
+﻿<div class="inmodal">
+    <div class="modal-header">
+        <span ng-if="survey._id == undefined">
+            Новый Опрос
+        </span>
+        <span ng-if="survey._id != undefined">
+            Редактировать Опрос
+        </span>
+        <button type="button" class="close" ng-click="closeModal()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Название</label> <input type="text"
+                                                   placeholder=""
+                                                   class="form-control" ng-model="survey.title">
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="row" ng-repeat="question in survey.questions track by $index">
+            <h3 class="text-center">Вопрос {{$index+1}}</h3>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label>Вопрос</label> <input type="text"
+                                                         placeholder=""
+                                                         class="form-control" ng-model="question.text">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Тип Ответа</label>
+                            <select class="form-control" ng-model="question.type">
+                                <option value="single">Один</option>
+                                <option value="multiple">Несколько</option>
+                                <option value="text">Текст</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" ng-hide="question.type =='text'">
+                <div class="row">
+                    <div class="col-sm-12" ng-repeat="option in question.options track by $index">
+                        <div class="form-group">
+                            <div class="input-group">
+                               <input type="text" class="form-control" ng-model="option.title">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" ng-click="removeOption(question, option, $index)" type="button"><i class="fa fa-trash"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-primary btn-sm" ng-click="addOption(question)"><i class="fa fa-plus"></i>Добавить Вариант</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>&nbsp;</label>
+                        
+                        <button class="btn btn-danger btn-block" ng-click="deleteQuestion(survey.questions , $index)"><i class="fa fa-trash"></i> Удалить</button>
+                    </div>
+                </div>
+                <hr />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button class="btn btn-primary" ng-click="addQuestion(survey)"><i class="fa fa-plus"></i> Добавить Вопрос</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button ng-disabled="!survey.title" class="btn btn-primary pull-right m-t-n-xs" ng-click="saveModal()">
+                Сохранить
+        </button>
+    </div>
+</div>

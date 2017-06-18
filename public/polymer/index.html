@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  
+
+  <script src="app/scripts/configs.js"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polymer Admin</title>
+  <script src="./bower_components/jquery/dist/jquery.js"></script>
+  <script src="./bower_components/jquery-sortable/source/js/jquery-sortable.js"></script>
+  <script  src="./bower_components/ckeditor/ckeditor.js"></script>
+  <script  src="./bower_components/ckeditor/adapters/jquery.js"></script>
+  
+  <meta name="theme-color" content="#2E3AA1">
+
+  
+  <link rel="manifest" href="manifest.json">
+
+  
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <link rel="stylesheet" href="./bower_components/leaflet/dist/leaflet.css">
+
+  
+  <script src="./bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  
+
+  
+  <link rel="import" href="./app/elements/elements.html">
+  
+
+  
+  <style is="custom-style" include="shared-styles"></style>
+  <script src="./bower_components/firebase/firebase.js"></script>
+   <script>
+  firebase.initializeApp(window.configs);
+</script>
+
+ 
+</head>
+
+<body unresolved class="fullbleed layout vertical">
+<span id="browser-sync-binding"></span>
+<template is="dom-bind" id="app">
+
+  
+  <pa-login user="{{user}}"></pa-login>
+  <paper-scroll-header-panel fixed>
+
+    <paper-toolbar class="top-toolbar">
+      <h1><a data-route="dashboard" href="/" on-click="onDataRouteClick">Polymer Admin</a></h1>
+      <paper-icon-button icon="menu" class="toggle-drawer" on-click="toggleDrawer"></paper-icon-button>
+      <span class="flex"></span>
+      <!-- <paper-icon-button icon="refresh" class="refresh-icon"></paper-icon-button> -->
+      <!-- <pa-search></pa-search> -->
+      <pa-auth-data id="data" location='{{location}}' user="{{user}}" todos="{{todos}}" profile="{{profile}}"></pa-auth-data>
+    </paper-toolbar>
+
+    <paper-drawer-panel id="paperDrawerPanel">
+
+      <paper-scroll-header-panel drawer>
+
+        <pa-menu route="{{route}}" user="{{user}}"></pa-menu>
+
+      </paper-scroll-header-panel>
+
+      <paper-scroll-header-panel main>
+
+        <pa-pages route="{{route}}" user="{{user}}" profile='{{profile}}' todos="{{todos}}" on-sign-in="signIn"></pa-pages>
+
+        <pa-footer></pa-footer>
+      </paper-scroll-header-panel>
+
+    </paper-drawer-panel>
+
+  </paper-scroll-header-panel>
+
+</template>
+
+
+
+<script src="./app/scripts/app.js"></script>
+<script src="./app/scripts/json2html.js"></script>
+
+
+<!-- endbuild-->
+</body>
+</html>

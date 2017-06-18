@@ -1,0 +1,268 @@
+<link rel="import" href="../../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../../bower_components/paper-toast/paper-toast.html">
+<script>
+var CKEDITOR_BASEPATH = '../../../../bower_components/ckeditor/';
+CKEDITOR.config.autoParagraph = false;
+</script>
+<dom-module id="pa-edit">
+  <template>
+    <style>
+    :host {
+      display: block;
+    }
+    
+    :host .primary-button {
+      background-color: #009688;
+      color: #fff;
+    }
+    
+    :host::content #images-list li {
+      border: 2px solid #fff;
+    }
+    
+    :host::content#images-list li.selected {
+      border: 1px solid green;
+    }
+    
+    :host div[name=tab-basic] img {
+      max-width: 320px !important;
+    }
+    </style>
+    <h3 id="path"></h3>
+    <div id="editor-wrap">
+      <textarea name="editor" class="editor" id="editor"></textarea>
+    </div>
+    <div id="input-wrap">
+      <paper-input label="Value" always-float-label name="value"></paper-input>
+    </div>
+    <br>
+    <paper-button id="save" class="primary-button">Save</paper-button>
+    <paper-button id="cancel">Cancel</paper-button>
+    <paper-toast id="toast1" duration="0" text="Change was saved successfull">
+      <paper-button onclick="document.querySelector('#toast1').toggle()" class="yellow-button">Close</paper-button>
+    </paper-toast>
+    <paper-toast id="toast2" duration="0" text="There was some error, please try later">
+      <paper-button onclick="document.querySelector('#toast2').toggle()" class="yellow-button">Close</paper-button>
+    </paper-toast>
+  </template>
+  <script>
+  (function() {
+    'use strict';
+
+    addEventListener('WebComponentsReady', function() {
+
+ 
+
+
+        Polymer({
+          is: 'pa-edit',
+
+          ready: function() {
+
+            var self = this;
+            this.getUrls().then(function(data) {
+
+              self.urls = data;
+            });
+            $('body').on('click', '#images-list li', function(e) {
+              $('#images-list .selected').removeClass('selected');
+              $(e.target).parent().addClass('selected');
+            })
+            this.listen(this.$$('#cancel'), 'tap', 'cancel');
+
+            if (CKEDITOR.instances['editor']) {
+              CKEDITOR.instances['editor'].destroy();
+            }
+            var editor = CKEDITOR.replace('editor', {
+              autoParagraph: false,
+              allowedContent: true,
+              enterMode: CKEDITOR.ENTER_BR
+            });
+
+            editor.addCommand('abbr', new CKEDITOR.dialogCommand('abbrDialog'));
+            CKEDITOR.dialog.add('abbrDialog', function(editor) {
+              return {
+                title: 'Abbreviation Properties',
+                minWidth: 400,
+                minHeight: 200,
+
+                contents: [{
+                  id: 'tab-basic',
+                  label: 'Advanced Settings',
+                  elements: [{
+                    type: "hbox",
+                    align: "top",
+                    widths: ["320px", "90px"],
+                    children: [{
+                      type: "html",
+                      id: "imagesContainer",
+                      html: " "
+                    }]
+                  }]
+                }],
+                onLoad: function() {
+                  var list = document.createElement('ul');
+                  list.id = "images-list";
+
+                  if (self.urls) {
+                    for (var index in self.urls) {
+                      var img = self.createImage(self.urls[index].url);
+                      list.append(img);
+                    }
+                    $('div[name=tab-basic]').append(list);
+                  }
+                },
+
+                onOk: function() {
+                  var dialog = this;
+
+                  var abbr = editor.document.createElement('img');
+                  abbr.setAttribute('src', $('.selected img').attr('src'));
+                  editor.insertElement(abbr);
+                }
+
+
+              };
+            });
+            editor.ui.addButton('SuperButton', {
+              label: "Click me",
+              command: 'abbr',
+              toolbar: 'insert',
+              icon: 'https://avatars1.githubusercontent.com/u/5500999?v=2&s=16'
+            });
+
+          },
+
+
+          properties: {
+            path: {
+              type: String
+            },
+            key: {
+              type: String
+            },
+            route: {
+              type: Object,
+              notify: true,
+              observer: 'routeChange'
+            },
+            type: {
+              type: Object
+            },
+            urls: {
+              type: Object
+            }
+          },
+          createImage: function(src) {
+            var img = document.createElement('img');
+            var li = document.createElement('li');
+
+            img.src = src;
+            li.style = "max-width: 100px; float: left;"
+            img.style = "max-width: 100px; float: left;"
+            li.append(img)
+            return li;
+          },
+          routeChange: function(data) {
+
+
+            if (data == 'edit' && app.params && app.params.path && app.params.type) {
+
+
+              this.path = app.params.path.replace(/\*/g, "/");
+              var type;
+              $('#path').html(this.path);
+              if (app.params.type == 'editor') {
+
+                type = $('#editor');
+                $('#input-wrap').hide();
+                $('#editor-wrap').show();
+              }
+              if (app.params.type == 'input') {
+                type = $('#input-wrap input');
+                $('#editor-wrap').hide();
+                $('#input-wrap').show();
+              }
+
+              if (!!app.dt) {
+
+                var p = this.path.split('/')
+                var dt = this.getElement(p, app.dt);
+                CKEDITOR.instances.editor.setData(dt)
+                type.show();
+
+              } else {
+                this.getJson(this.path).then(function(data) {
+                  CKEDITOR.instances.editor.setData(data)
+                  type.show();
+                });
+              }
+              this.listen(this.$$('#save'), 'tap', 'save');
+            } else if (data == 'new' && app.params && app.params.path) {
+              this.path = app.params.path.replace(/\-/g, "/");
+              this.key = app.params.key;
+              this.listen(this.$$('#save'), 'tap', 'createNew');
+            }
+          },
+          getElement: function(path, json) {
+            var a = path.shift();
+            if (path.length > 0) {
+              return this.getElement(path, json[a]);
+            } else {
+              return json[a];
+            }
+          },
+          getUrls: function() {
+            var ref = firebase.database().ref('imagesUrl/');
+            var promise = new Promise(function(resolve, reject) {
+              ref.on('value', function(data) {
+                resolve(data.val())
+              }, function(error) {
+                reject(error.code)
+              })
+            })
+            return promise;
+          },
+          cancel: function() {
+            page.show('/');
+          },
+          save: function(path, value) {
+
+            var value;
+            var type;
+            if (app.params.type == 'editor') {
+              type = $('#editor-wrap textarea');
+              value = CKEDITOR.instances.editor.getData()
+
+            }
+            if (app.params.type == 'input') {
+              type = $('#input-wrap input');
+              value = type.val();
+            }
+
+            var self = this;
+            var updates = {};
+            updates[this.path] = value;
+            var ref = firebase.database().ref().update(updates);
+            ref.then(function(data) {
+              self.$$('#toast1').open();
+            }, function(data) {
+              self.$$('#toast2').open();
+            })
+          },
+          getJson: function(path) {
+
+            var a = new Promise(function(resolve, reject) {
+              var ref = firebase.database().ref(path);
+              ref.on('value', function(data) {
+                resolve(data.val())
+              });
+            });
+            return a;
+          },
+        });
+      })
+    
+  })();
+  </script>
+</dom-module>

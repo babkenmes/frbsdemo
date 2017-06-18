@@ -1,0 +1,24 @@
+﻿<div class="inmodal">
+    <div class="modal-header">
+        Завершить Презентацию
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label>Итог</label> 
+            <select class="form-control" ng-model="presentation.outcome">
+                <option value="positive">Позитивный</option>
+                <option value="negative">Негативный</option>
+            </select>
+        </div>        
+        <div class="form-group">
+            <label>Комментарий</label> <textarea rows="4"
+                                                placeholder=""
+                                                class="form-control" ng-model="presentation.comment"></textarea>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button ng-disabled="(presentation.outcome=='negative' && !presentation.comment)" class="btn btn-primary pull-right m-t-n-xs" ng-click="outcomeModalConfirmAction()">
+            <i class="fa fa-save"></i> Сохранить и выйти
+        </button>
+    </div>
+</div>

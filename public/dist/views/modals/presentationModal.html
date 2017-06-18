@@ -1,0 +1,98 @@
+﻿<div class="inmodal">
+    <div class="modal-header">
+        <span ng-if="presentation._id == undefined">
+            Новая Презентация
+        </span>
+        <span ng-if="presentation._id != undefined">
+            Редактировать Презентацию
+        </span>
+        <button type="button" class="close" ng-click="closeModal()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row" ng-show="presentation.status!='finished'">
+            <div class="col-md-6">
+                <div class="form-group medInf-datepicker">
+                    <label>Дата</label>
+                    <datepicker date="presentation.appointedDate"></datepicker>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div uib-timepicker show-meridian="false" ng-model="presentation.appointedDate"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Доктор</label>
+                    <div class="input-group">
+                        <div class="form-control">
+                            {{presentation.doctor.firstName}} {{presentation.doctor.lastName}}
+                        </div>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button" ng-click="openDoctorPickerModal(presentation)">Выбрать</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Презентационные Файлы</label>
+                    <div class="input-group">
+                        <div class="form-control">
+                            {{presentation.file.title}}  
+                            <span ng-show="presentation.file.slides.length">({{presentation.file.slides.length}} слайдов)</span>
+                        </div>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button" ng-click="openPresentationFilePickerModal(presentation)">Выбрать</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Опрос</label>
+                    <div class="input-group">
+                        <div class="form-control">
+                            {{presentation.survey.survey.title}}  
+                            <span ng-show="presentation.survey.survey.questions.length">({{presentation.survey.survey.questions.length}} вопросов)</span>
+                        </div>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button" ng-click="openSurveyPickerModal(presentation)">Выбрать</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Опрос заполнет</label>
+                    <div class="input-group">
+                        <div class="form-control" ng-init="presentation.survey.isFilledByDoctor = presentation.survey.isFilledByDoctor === undefined ? true : presentation.survey.isFilledByDoctor">
+                            <label><input type="radio" ng-model="presentation.survey.isFilledByDoctor" ng-value="true" /> Доктор </label>
+                            <label><input type="radio" ng-model="presentation.survey.isFilledByDoctor" ng-value="false" /> Мед. Пред,</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p ng-show="message">{{message}}</p>
+    </div>
+    <div class="modal-footer">
+        <div class="pull-left">
+            <button ng-show="presentation.status!='finished'" ng-disabled="!(presentation._id && presentation.doctor._id && presentation.file._id && presentation.status != 'finished' && presentation.survey.survey._id && presentation.type)" class="btn btn-primary" ng-click="startPresentation(presentation._id)">
+                <i class="fa fa-play"></i> Начать
+            </button>
+        </div>
+        <div class="pull-right">
+            <button ng-show="presentation._id" class="btn btn-danger" ng-click="openConfirmModal(presentation._id)">
+                <i class="fa fa-trash"></i>
+                Удалить
+            </button>
+            <button ng-disabled="!(presentation.appointedDate && presentation.doctor._id && presentation.file._id  && presentation.survey.survey._id)" class="btn btn-primary" ng-click="saveModal()">
+                <i class="fa fa-save"></i>
+                Сохранить
+            </button>
+        </div>
+    </div>
+</div>

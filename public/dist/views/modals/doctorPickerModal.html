@@ -1,0 +1,55 @@
+﻿<div class="inmodal  doctor-picker-modal">
+    <div class="modal-header">
+        Выберите Доктора
+        <button type="button" class="close" ng-click="doctorPickerModalCancelAction()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <label>Доктора</label>
+                <div class="input-group">
+                    <input type="text" ng-model="doctorSearch" class="form-control" placeholder="Search">
+                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+            <br />
+            <div class="col-md-12 doctorPicker">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Имя</th>
+                            <th>Фамилия</th>
+                            <th>Отчество</th>
+                            <th>Специальность</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="doctor in doctors | filter:doctorSearch" ng-click="selectDoctor(doctor)" ng-class="{selectedRow: doctor._id == presentation.doctor._id}">
+                            <td>{{$index + 1}}</td>
+                            <td>{{doctor.firstName}}</td>
+                            <td>{{doctor.lastName}}</td>
+                            <td>{{doctor.middleName}}</td>
+                            <td>{{doctor.speciality}}</td>
+                        </tr>
+                        <tr ng-show="!doctors.length">
+                            <td>Не найдено</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="pull-right">
+            <button type="button" class="btn btn-default m-t-n-xs" ng-click="doctorPickerModalCancelAction()">
+                    Отмена
+            </button>
+            <button type="button" ng-disabled="!(doctors.length && presentation.doctor._id)" class="btn btn-primary m-t-n-xs" ng-click="doctorPickerModalSaveAction()">
+                    Сохранить
+            </button>
+        </div>
+    </div>
+</div>

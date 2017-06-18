@@ -1,0 +1,26 @@
+﻿<div class="inmodal blur">
+
+    <div class="modal-header">
+        Входящий Звонок
+        <button type="button" class="close" ng-click="closeCallingModal()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body text-center">
+        <h3>{{presentation.medRep.firstName}} {{ presentation.medRep.lastName}}</h3>
+        <button ng-hide="isSup" ng-disabled="!inCall && !isCalling" ng-class="{'btn btn-lg btn-danger' : inCall == true && isCalling == false , 'btn  btn-lg btn-default' : inCall == false && isCalling == false, 'btn  btn-lg btn-primary' : isCalling == true && inCall == false}" ng-click="toggleCall()">
+            <i class="fa fa-phone" ng-class="{'blink' : isCalling == true}"></i>
+            <span ng-if="inCall && !isCalling">
+                Отсоединиться
+            </span>
+            <span ng-if="!inCall && !isCalling">
+                Нет входящего звонка
+            </span>
+
+            <span ng-if="!inCall && isCalling">
+                Ответить
+            </span>
+        </button>
+    </div>  
+
+</div>

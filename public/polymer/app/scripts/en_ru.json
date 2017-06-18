@@ -1,0 +1,1270 @@
+{"en":{
+  "charlotte": "Charlotte Cabaret",
+  "button": {
+    "information": "Information",
+    "moreInfo": "More Info",
+    "here": "Here",
+    "comingPosters": "Coming Posters",
+    "reservation": "Reservation",
+    "back": "Back",
+    "letsSee": "Let's See",
+    "pressHere": "Press Here",
+    "more": "More",
+    "send": "Send",
+    "up": "Up",
+    "evening": "Evening",
+    "showGallery": "SHOW Gallery",
+    "backtoShow": "Back to Show"
+  },
+  "navbar-menu": {
+    "home": "Home",
+    "show": "Show",
+    "special": "Special",
+    "posters": "Posters",
+    "strip": "Strip",
+    "vip": "VIP",
+    "gallery": "Gallery",
+    "menu": "Menu",
+    "standart": "Standard",
+    "crazy": "Crazy",
+    "nargile": "Nargile",
+    "events": "Events",
+    "history": "History",
+    "contacts": "Contacts",
+    "career": "Career"
+  },
+  "money": {
+    "amd": "AMD"
+  },
+
+  "reservation": {
+    "take": "Take reservation online",
+    "make": "Make reservation online"
+  },
+
+  "crazyMenu": {
+    "text": "Crazy Menu"
+  },
+
+  "main": {
+    "hero": {
+      "strip": "Strip   Program",
+      "show": "Show  Program",
+      "vip": "VIP  program"
+    },
+    "bottomBanner": {
+      "bannerText": "Change your life Story"
+    }
+  },
+  "special": {
+    "title": "Special Day - Special SHOW",
+    "description": "We are always in process for creating something new.<br> It can be a birthday or a special evening dedicated to someone or to something. We<br> have been organizing special events for 10 years. So we invite you to join our<br> events with a great pleasure!"
+  },
+
+  "posters": {
+    "title": "Coming Posters",
+    "hero": {
+      "retroSlide": {
+        "title": "Retro Evening",
+        "promoText": "<span class=\"text-muted m-b-20 show\">You can organize Your OWN evening! <br>Whenever you want <br></span><span class=\"color-gray m-b-20 show\" >It's the 21st century. But every <br>tuesday we take you to the <br>19th century. <br>Retro Songs / Retro Style <br>Retro Dresses / Retro Lights</span><span class=\"text-muted m-b-80 show\" >EVERY TUESDAY<br>ENTRANCE FEE 3000 AMD<br>From 21:00 to 23:00 <br></span> "
+
+
+      },
+      "hookahSlide": {
+        "title": "Hookah party",
+        "promoText": "<span class=\"text-muted m-b-20 show\">By the way you can get our cards <br>Gift or Discounts very soon.<br></span><span class=\"color-gray m-b-20 show\" >Hookah + Strip Show + Girls <br>Imagine what a crazy night it's gonna be.</span><span class=\"text-muted m-b-80 show\" >EVERY WEDNESDAY <br>ENTRANCE FEE 5000 AMD <br>From 23: 30 to 06:00</span>"
+
+      },
+      "russianSlide": {
+        "title": "RUSSIAN SONGS EVENING",
+        "promoText": "<span class=\"text-muted m-b-20 show\">Russian Songs, Russian Show, Dance and ...<br></span><span class=\"color-gray m-b-20 show\" >If you like russian songs<br>than Welcome, Friday is,<br>the Russian songs evening . <br></span><span class=\"text-muted m-b-80 show\" >EVERY FRIDAY<br>ENTRANCE FEE 3000 AMD<br>From 21:00 to 23:00 <br></span>"
+
+      }
+    }
+  },
+
+  "vip": {
+    "title": "V.I.P Rooms",
+    "description": "This is a special V.I.P room for Special Guests. <br /> You can spend your time in this room with <br /> perfect Girls and in an amazing atmosphere. <br /> Don't miss your Pleasure!",
+    "hours": "Every Day from 23:45 to 06:00"
+  },
+
+  "gallery": {
+    "show": {
+      "title": "Caharlotte SHOW <br /> GALLERY",
+      "hours": "Every day from 21:00 to 23:30"
+    },
+    "strip": {
+      "title": "STRIP Gallery",
+      "hours": "Every day from 21:00 to 23:30"
+    }
+  },
+
+  "strip": {
+    "title": "Strip Program <small class=\"text-primary\">(Part 2)<small>",
+    "hours": "Every day from 23:45 to 06:00 <br /> A unique place to relax",
+
+    "cabaret": {
+      "title": "Cabaret Charlotte",
+      "description": "A place where our charming and beautiful girls will help you drift away from your daily routine. A place that will help you shift to another world. And forgot everything that botheres you."
+    },
+    "charlotte": {
+      "title": "Charlotte Girls",
+      "description": "Amazing girls from all over the World. Girls from Armenia, Russia, Ukraine, Kazakhstan, Kyrgyzstan, even Nigeria. Soon also from Europe . They all are professional STRIP Dancers. They have passed special courses."
+    },
+    "experience": {
+      "title": "Our Experience",
+      "description": "It has already been 14 years that we have experience in this area. Many years of hard work have helped us refine. Refining the dance moves the interior and the expectations."
+    },
+    "welcome": {
+      "title": "Welcome to Us!",
+      "description": "We suggest you finishing your working day at our club, relax with us, and return <br /> home as a complete MAN! <br />",
+      "hours": "Every Day Form 23:45 to 06:00"
+    }
+  },
+  "generalShow": {
+    "title": "Charlotte SHOW ",
+    "part": "(Part 1)",
+    "hours": "Every day from 21:00 to 23:30",
+    "place": " A unique place to see a beautiful SHOW.",
+    "special": "Specially SHOW",
+    "events": "Events",
+    "showMan": "ShowMan / Singer",
+    "anchorMan": "AnchorMan / Singer",
+    "dancerActor": "Dancers / Actors<br>Instrumentalists",
+    "seeMore": "If you want to see more than welcome<br>Press SHOW Gallery",
+    "reservationOnline": "Or, Just you can make reservation online"
+
+  },
+
+  "siners": {
+    "vardan": {
+      "firstName": "Vardan",
+      "lastName": "Sargsyan",
+      "fullName": "Vardan Sargsyan",
+      "imagesCount": "6",
+      "about": "First of all he is a great SHOWMAN. One of the best SHOWMANS in Armenia.\nIn addition to this he is a  good and lovely singer.\nHe started his music career in 2001 and created a\nlot of music videos during his lifetime,\nhe  has  CD's, too. His first CD was published in 2005.\nHe  developed a travel TV program 6 months ago,\nwhich is called “Away from home”. It is broadcast \non ATV Panarmenian TV channels.\nHe has been working at “Charlotte SHOW” club for 10 years.\nSo don't miss your chance to see him.",
+      "listen": "To listen to Vardan's songs you can reserve a table It will only take a few seconds."
+
+    },
+    "arpine": {
+      "firstName": "Arpine",
+      "lastName": "Bekjanyan",
+      "fullName": "Arpine Bekjanyan",
+      "imagesCount": "6",
+      "about": "She is a professional and popular singer and famous composer Arman Elbert's wife. From 1991-93 she was a solo singer at “Glance” vocal instrumental ensemble . A lot of people have an opportunity to enjoy her voice. She  graduated Yerevan Jazz College after A. Bakunts in 1993. During those years she took part in many concerts in various countries in the world and was awarded with certificates for her talent. In 1996 she was in “Mer bak” fiction film. During these years she showed her talent with singing and working at \"Charlotte SHOW\".You can listen to Arpine's songs at \"Charlotte SHOW\" Club... Hurry and don't miss your chance.",
+      "listen": "To listen to Arpine's songs you can reserve a table It will only take a few seconds."
+    },
+    "emin": {
+      "firstName": "Emin",
+      "lastName": "Davidov",
+      "fullName": "Emin Davidov",
+
+      "imagesCount": "5",
+      "about": "Emin Davidov is a very famous singer in Armenia. He is famous since 2000's. He has had a lot of music experience during his life. When he was 16 years old he was singing in Yerevan Mathematic Machinery Institute's \"Rainbow\" music band. And during these years he  has given 20 charity concerts with the mentioned group in the disastrous areas. He has been in several Russian cities and Beirut to make concert tours. Now sings at \"Charlotte SHOW\" Club. artist, so come and see his Shows in our Club.",
+      "listen": "To listen to Emin's songs you can reserve a table It will only take a few seconds."
+    },
+    "juice": {
+      "firstName": "Juice",
+      "lastName": "",
+      "fullName": "Juice",
+
+      "imagesCount": "6",
+      "about": "Juice is a young and very promising singer, who composes music by herself, dance perfectly and sing in different styles. For some time she worked as a solo back-vocalist for famous Russian pop star Irina Alegrova and successfully performed in many countries with her. European show business was also interested in Juice. Famous music maker, Anthony Huiskamp, suggested recording  three cover-versions of the songs  \"Unchain my heart\" (Joe Cocker), \"Not that kind\" (Anastasia), \"Play\" (J. Lo). After recording these songs,  Anthony showed them to a famous producer Menno in Nederlands, who suggested Juice recording the first single based on the song \"Lover\". Song \"Lover\" was recorded in Apeldorn and was sent to the European Court of followers in radio of talents \"Ongekendtalent TOP-40\". The song was named “TONIGHT” and a music video was made on it. The duet “TONIGHT” became the best one of 2013. In 2013 the first Armenian music award took place on “DAR 21” TV musical channel and Juice was chosen as \"THE BEST ARTIST OF THE YEAR\" by the audience voting.You can listen to Juice's Song at \"Charlotte SHOW\" Club... Don't miss your chance.",
+      "listen": "To listen to Juice's songs you can reserve a table It will only take a few seconds."
+    },
+    "sofi": {
+      "firstName": "Sofi",
+      "lastName": "Danielyan",
+      "fullName": "Sofi Danelyan",
+      "imagesCount": "6",
+      "about": "She graduated the piano division of a musical college. In 1998 she started to sing at “Ohanyan song theatre”. In 2000 she released the music video \"I love you\".  Then she  gave a lot of concerts in Armenia. She has more than 10 music videos, which are broadcast by different TV channels. She has been singing at ”Cabaret Charlotte SHOW” club for more than 10 years and participated in  many events and concerts.Very talented singer and very popular in Armenia. You can see her performances every day only at “ Charlotte SHOW\" club .Welcome.",
+      "listen": "To listen to Sofi's songs you can reserve a table It will only take a few seconds."
+    },
+    "vigen": {
+      "firstName": "Vigen",
+      "lastName": "Aharonyan",
+      "fullName": "Vigen Aharonyan",
+
+      "imagesCount": "6",
+      "about": "Vigen entered  the music school named after Sayat-Nova in 2004, which was a strong stable basis for his career. In 2006 he participated in golden voice contest-festival and recieved “Grand prix” award.  In 2016 he got a Master’s degree after graduating the Conservatory. He has a great voice. Though he is young, he is a famous  singer and has a handsome voice. And don’t forget, that he works at “Charlotte Show Club”.",
+      "listen": "To listen to Vigen's songs you can reserve a table It will only take a few seconds."
+    },
+    "tina": {
+      "firstName": "Tina",
+      "lastName": "Key",
+      "fullName": "Tina Key",
+      "imagesCount": "6",
+      "about": "She is a circus artist, and an acrobat. She started her dancing career at the age of 3 at “Dream” dance ensemble. In 1995 she started to perform in various circus stages in Yerevan. She  cooperated with Soviet folk artist, Andrey Chuga. During that  period she staged her first circus performance, which  consisted of hatha yoga elements, 15 types of snakes, 2 crocodiles, lizards, poisonous scorpions and spiders.In 2010 she opened “Tina Key” dance studio. In 2011 she participated on the “Best of the Best” international contest. Tina Key  is the only person with this talent in Armenia. And she works at \"Charlotte SHOW\" Club.",
+      "listen": "To listen to Tina's songs you can reserve a table It will only take a few seconds."
+    },
+    "sequ": {
+      "firstName": "Sequ",
+      "lastName": "",
+      "fullName": "Sequ",
+      "imagesCount": "4",
+      "about": "He was born in Brazil. He has an amazing talent and voice. He grew up in the family of musicians, he can sing amazing songs  such as  James Brown and other famous singers. The Charlotte Show Club is a unique Show Club in Armenia . He has been living in Armenia for more than 5 years and during this  time he has been working at Charlotte. You can listen to him every day  at  Charlotte SHOW Club.",
+      "listen": "To listen to Sequ's songs you can reserve a table It will only take a few seconds."
+    },
+    "hayana": {
+      "firstName": "Hayana",
+      "lastName": "",
+      "fullName": "Hayana",
+      "imagesCount": "6",
+      "about": "Hayana is one of the best singers in Armenia. In university she studied law. Later she found out that she could sing and started her career as a singer. Now she is the best one in  Armenia. Druing her life most of the time she worked and lived in St. Petersburg . Now she lives in Armenia and works  at “Charlote SHOW Club” as a singer.",
+      "listen": "To listen to Hayana's songs you can reserve a table It will only take a few seconds."
+    },
+    "ilona": {
+      "firstName": "Ilona",
+      "lastName": "",
+      "fullName": "Ilona",
+
+      "imagesCount": "4",
+      "about": "Ilona is an amazing singer. When you see how she sings , you will be amazed. She is an actress and a singer ( education - 2000-2003 she studied at  State Bandstand and Jazz Arts College, at 2005-2009 she also  studied at State Conservatory named after Komitas, from 2009-2010 she got a Master’s degree at State Conservatory named after Komitas). It means, that she has an amazing voice and experience. She  works at jazz clubs “Poplavok”, “Malkhas”,“Charlotte SHOW” \"Jazz College\". And she performed her jazz songs and  gave  a lot of concerts in Moscow, Rostov, Tehran and Paris.",
+      "listen": "To listen to Iliona's songs you can reserve a table It will only take a few seconds."
+    },
+    "iveta": {
+      "firstName": "Iveta",
+      "lastName": "Yedigaryan",
+      "fullName": "Iveta Yedigaryan",
+      "imagesCount": "4",
+      "about": "She's a professional actress and a good singer. Iveta started her career when she was 5 years old. She played many roles in different movies, for example  \"Taxi nema\".  Iveta is very famous in Armenia due to TV shows. Sos Sargsian nominated and certified her as the best actress in  2001.  Now Iveta works at Charlotte Cabaret, if you want to enjoy the show with Iveta come to Charlotte.",
+      "listen": "To listen to Iveta's songs you can reserve a table It will only take a few seconds."
+    },
+    "armen": {
+      "firstName": "Armen",
+      "lastName": "",
+      "fullName": "Armen",
+      "imagesCount": "5",
+      "about": "Armen is a professional dancer. He started his career when he was 5 years old. At the age of 10 he entered “Rhythm” dance studio under the supervision of Ara Mkhoyan. In 2001 continued dancing in \"Matador\" dance studio.In 2002 he opened his own dance studio which was named \"Fiesta”. Then in 2006 he got an offer to work in \"VIVAT\" dance studio, where he also worked as a director of the studio. \"Vivat\" dance studio has performed around 30 dances in many dance genres and all these performances have won the 1st place in Armenia. So if you want  to see professional and artistic dances you need to visit our SHOW Club.",
+      "listen": "To listen to Armen's songs you can reserve a table It will only take a few seconds."
+    },
+    "yana": {
+      "firstName": "Yana",
+      "lastName": "",
+      "fullName": "Yana",
+      "imagesCount": "5",
+      "about": "Yana is  one of the best dancers in Armenia. You need to see how good she is on stage. She is very flexible and talented. A lot of people came from the USA to see her dances and her acting skills. In 2001 she started her teaching career. She is very experienced. She danced in a lot of luxury restaurants in Armenia. Now she works at Charlotte SHOW Club.Do not miss your chance to see her dances.",
+      "listen": "To listen to Yana's songs you can reserve a table It will only take a few seconds."
+    },
+    "hrant": {
+      "firstName": "Hrant",
+      "lastName": "Ishxanyan",
+      "fullName": "Hrant Ishxanyan",
+      "imagesCount": "6",
+      "about": "He is a professional instrumentalist and a musician. When he was 7 he entered specialized music school to learn to play on the violin and graduated in 1983. His music execution can change your world. His music  will help you shift to another world. After a hard working day a lot of people come to our Club to listen to his music. Some people say that hus music relaxes them We advise you relax yourself and spend your evening   at  our Club. Charlotte SHOW.",
+      "listen": "To listen to Hrant's songs you can reserve a table It will only take a few seconds."
+    }
+  },
+  "events": {
+    "title": "We try to do something new in Yerevan<br> to help You CREATE Your own<br> !!! EVENING or EVENT !!!",
+    "hero": {
+      "stagpartySlide": {
+        "title": "Stag-Party",
+        "description": "<small>New in Yerevan<br> </small> Support Team<br> For Free"
+      },
+
+      "birthdaypartySlide": {
+        "title": "Birthday Party",
+        "description": "<small>New in Yerevan<br> </small> Support Team<br> For Free"
+      },
+
+      "henpartySlide": {
+        "title": "Hen-Party",
+        "description": " <small>New in Yerevan<br> </small> Support Team<br> For Free"
+      },
+      "closedpartySlide": {
+        "title": "Closed Party",
+        "description": "<small>New in Yerevan<br> </small> Support Team<br> For Free"
+      }
+
+    },
+    "purposals": {
+
+      "title": "Our Proposals",
+
+      "stag": {
+        "title": "STAG-PARTY",
+        "descriptionTitle": "For this event you have ",
+        "description" :"<li>10% off for entrance fee</li><li>One Private Dance</li><li>And Professional Support team for free.</li>"
+       
+      },
+
+      "birthday": {
+        "title": "Birthday Party",
+        "descriptionTitle": " Your Birthday is a Special Event for Us.<br> Celebrate it a little bit different.​",
+        "description": "<li>10% off for entrance fee</li><li>Individual Private Dance</li><li>Some Gifts from us</li>"
+        
+      },
+
+      "hen-party": {
+        "title": "HEN-PARTY",
+        "description": "Hen-Party is one of the most beautiful events when you celebrate it beautifully. We know how to do it beautifully. For You Girls we can offer everything. By Your Order. Do not be shy"
+        
+      },
+      "closedParty": {
+        "title": "Closed Party",
+        "description": "For this Party You need to be a more Powerful person. You show Your power, than We will provide you our Professional Support team. And some Presents from us."
+        
+      },
+      "contactusText1": "If you are interested please contact us.",
+      "contactusText2": "to Contact With Us"
+
+    }
+  },
+  "menu": {
+    "standard": {
+      "title": "Standard Menu",
+      "entrance": " Entrance fee STRIP 5000-10000 AMD<br> SHOW 3000 AMD",
+      "Beluga": "Beluga",
+      "GreyGoose": "Grey Goose",
+      "Absolutaroma": "Absolut aroma",
+      "Absolut": "Absolut",
+      "Finlandia": "Finlandia",
+      "Koskenkorva": "Koskenkorva",
+      "Russianstandard": "Russian standard",
+      "Smirnoff": "Smirnoff",
+      "Silver": "Silver",
+      "OlmecaSilver|Gold": "Olmeca Silver | Gold",
+      "LunazolSilver|Anejo": "Lunazol Silver | Anejo",
+      "SierraSilver|Gold": "Sierra Silver | Gold",
+      "Patron(silver|anejo)": "Patron(silver | anejo)",
+      "BlueLabel": "Blue Label",
+      "Chivas21": "Chivas 21",
+      "Macallan12": "Macallan 12",
+      "Chivas18": "Chivas 18",
+      "Chivas12": "Chivas 12",
+      "Blacklabel": "Black label",
+      "JackDaniels": "Jack Daniels",
+      "Jameson": "Jameson",
+      "Redlabel": "Red label",
+      "JimBeam": "Jim Beam",
+      "FamousGrouse": "Famous Grouse",
+      "Ballantine's": "Ballantine 's",
+      "HavanaClub7": "Havana Club 7",
+      "HavanaClub3": "Havana Club 3",
+      "Bacardioakheart": "Bacardi oakheart",
+      "Bacardisuperior": "Bacardi superior",
+      "Bacardiblack": "Bacardi black",
+      "CaptainMorganBlack": "Captain Morgan Black",
+      "BombaySapphire": "Bombay Sapphire",
+      "Beefeater": "Beefeater",
+      "Gordon's": "Gordon 's",
+      "HennessyXO": "Hennessy XO",
+      "HennessyVSOP": "Hennessy VSOP",
+      "Nairi": "Nairi",
+      "Tonakan": "Tonakan",
+      "Akhtamar": "Akhtamar",
+      "Selected": "Selected",
+      "Ani": "Ani",
+      "Ararat5*": "Ararat 5 *",
+      "Sambuca": "Sambuca",
+      "GrandMarnier": "Grand Marnier",
+      "Kahlua": "Kahlua",
+      "Cointreau": "Cointreau",
+      "Baileys": "Baileys",
+      "Malibu": "Malibu",
+      "Jägermeister": "Jägermeister",
+      "AstiMartiniRose": "Asti Martini Rose",
+      "AstiMartini": "Asti Martini",
+      "AstiMartiniProsecco02": "Asti Martini Prosecco 0.2",
+      "Armenianmoist": "Armenian moist",
+      "Armeniamoist": "Armenia moist",
+      "AbsintheKsięte": "Absinthe Księte",
+      "Campari": "Campari",
+      "Martini(Bianco)": "Martini(Bianco)",
+      "Mariinsky(Rosso)": "Mariinsky(Rosso)",
+      "Becherovka": "Becherovka",
+      "Ijevan": "Ijevan",
+      "Vernashen": "Vernashen",
+      "Pomegranate": "Pomegranate",
+      "Areni2010": "Areni 2010",
+      "Areni1993": "Areni 1993",
+      "VillaAntinori": "Villa Antinori",
+      "Heineken": "Heineken",
+      "Miller": "Miller",
+      "Aleksandrapol": "Aleksandrapol",
+      "Kotayk": "Kotayk",
+      "Kilikia": "Kilikia",
+      "Gyumri": "Gyumri",
+      "Charlotte": "Charlotte",
+      "Lamborghini": "Lamborghini",
+      "LongIslandIcedTea": "Long Island Iced Tea",
+      "Amadeus": "Amadeus",
+      "Mojito": "Mojito",
+      "Cocaine": "Cocaine",
+      "Daiquiri": "Daiquiri",
+      "Pinacolada": "Pina colada",
+      "TequilaSunrise": "Tequila Sunrise",
+      "Sexonbeach": "Sex on beach",
+      "Orgazm": "Orgazm",
+      "B-52": "B - 52",
+      "Margarita": "Margarita",
+      "GinTonic": "Gin Tonic",
+      "CampariOrange": "Campari Orange",
+      "Tequilaboom": "Tequila boom",
+      "Cosmopolitan": "Cosmopolitan",
+      "CubaLibre": "Cuba Libre",
+      "BloodyMary": "Bloody Mary",
+      "Screwdriver": "Screwdriver",
+      "Charlotte": "Charlotte",
+      "Fruit": "Fruit",
+      "Mojito": "Mojito",
+      "Lactic": "Lactic",
+      "Strawberrygarden": "Strawberry garden",
+      "Sweetkiss": "Sweet kiss",
+      "Chocolate": "Chocolate",
+      "Strawberry": "Strawberry",
+      "Pineapple": "Pineapple",
+      "Multi": "Multi",
+      "Grapefruit": "Grapefruit",
+      "Orange": "Orange",
+      "Kiwi": "Kiwi",
+      "Lemon": "Lemon",
+      "Banana": "Banana",
+      "Carrot": "Carrot",
+      "Energydrinks": "Energy drinks",
+      "Tonic": "Tonic",
+      "Okroshka": "Okroshka",
+      "Naturaljuice": "Natural juice",
+      "Pepsi": "Pepsi",
+      "Cola|Fanta|Sprite": "Cola | Fanta | Sprite",
+      "Mineralwater": "Mineral water",
+      "Water": "Water",
+      "Tan": "Tan",
+      "Glace": "Glace",
+      "Cappuccino": "Cappuccino",
+      "Espresso": "Espresso",
+      "Latte": "Latte",
+      "Americano": "Americano",
+      "Instantcoffee": "Instant coffee",
+      "Orientalcoffee": "Oriental coffee",
+      "Icedtea": "Iced tea",
+      "Green|Black|Hibiscus": "Green | Black | Hibiscus",
+      "Jerky": "Jerky",
+      "Pistachios": "Pistachios",
+      "Chips": "Chips",
+      "Smokedcheese": "Smoked cheese",
+      "CarrotwithLemon": "Carrot with Lemon",
+      "SmokedTailsCancer": "Smoked Tails Cancer",
+      "Meatassorted": "Meat assorted",
+      "Cheesesassorted": "Cheeses assorted",
+      "Nikalashka": "Nikalashka",
+      "Lime": "Lime",
+      "Saltedcucumbers": "Salted cucumbers",
+      "Olives": "Olives",
+      "Lemon": "Lemon",
+      "Bread": "Bread",
+      "Charlotte": "Charlotte",
+      "Amadeus": "Amadeus",
+      "Caesar": "Caesar",
+      "Metropolitan": "Metropolitan",
+      "Crab": "Crab",
+      "Chicken": "Chicken",
+      "Greek": "Greek",
+      "Mushroom": "Mushroom",
+      "Summer": "Summer",
+      "BrandedPizzaCharlotte": "Branded Pizza Charlotte",
+      "AmadeusPizza": "Amadeus Pizza",
+      "PizzawithHam": "Pizza with Ham",
+      "Pizzawithchicken": "Pizza with chicken",
+      "Pizzawithmushrooms": "Pizza with mushrooms",
+      "Pizzawithsalami": "Pizza with salami",
+      "Ajariankhachapuri": "Ajarian khachapuri",
+      "Hamburger": "Hamburger",
+      "Sandwich": "Sandwich",
+      "Sandwichwithchicken": "Sandwich with chicken",
+      "Empanadas2pc": "Empanadas 2 pc",
+      "Pancakeswithmushrooms2pc": "Pancakes with mushrooms 2 pc",
+      "MagicCharlotte": "Magic Charlotte",
+      "Beefsteak": "Beef steak",
+      "FriedChicken": "Fried Chicken",
+      "WingsLouisiana": "Wings Louisiana",
+      "Chickenfilletwithspinach": "Chicken fillet with spinach",
+      "Mexicanlegs": "Mexican legs",
+      "AssortedfruitsCharlotte": "Assorted fruits Charlotte",
+      "Assortedfruits": "Assorted fruits",
+      "FruitFondue": "Fruit Fondue",
+      "Fruitsalad": "Fruit salad",
+      "IcecreamCharlotte": "Ice cream Charlotte",
+      "Friedicecream": "Fried ice cream",
+      "Chocolatebar": "Chocolate bar",
+      "Icecream": "Ice cream",
+      "FerreroRocher": "Ferrero Rocher",
+      "Raffaello": "Raffaello",
+      "Cigaronne": "Cigaronne",
+      "Dunhill": "Dunhill",
+      "Parliament": "Parliament",
+      "Davidoff": "Davidoff",
+      "Kent": "Kent",
+      "Marlboro": "Marlboro",
+      "Ararat": "Ararat",
+      "Karelia": "Karelia",
+      "Lighter": "Lighter",
+      "Chewinggum": "Chewing gum",
+      "vodka": "Vodka",
+      "tequila": "Tequila",
+      "whiskey": "Whiskey",
+      "rum": "Rum",
+      "gin": "Gin",
+      "cognac": "Cognac",
+      "liqueu": "Liqueu",
+      "champagne": "Champagne and Sparkling Wines",
+      "aperitif": "Aperitif",
+      "wine": "Wine",
+      "beer": "Beer",
+      "alcohol": "Alcoholic Cocktails",
+      "nonalcohol": "Non-alcoholic Cocktails",
+      "fresh": "Fresh",
+      "cold": "Cold Drinks",
+      "coffee": "Coffee | Tea",
+      "beerSnacks": "Beer Snacks",
+      "snacks": "Snacks",
+      "salads": "Salads",
+      "express": "Express dishes",
+      "hot": "Hot meals",
+      "dessert": "Dessert",
+      "cigarettes": "Cigarettes",
+      "service": "10% Service fee"
+    },
+    "crazy": {
+      "title": "Crazy menu",
+      "Song-order": "Song order",
+      "danceOrder": "Dance order",
+      "consummation": "Consummation (10 min)",
+      "dancer": "&nbsp; &nbsp; a) dancer",
+      "waitress": "&nbsp; &nbsp; b) waitress",
+      "Table-Dance": "Table Dance",
+      "privateDance": "Private dance",
+      "completePrivate": "Complete private",
+      "lesbian-dance": "lesbian dance",
+      "romantic-erotic": "Romantic-erotic dance with dancer or waitress",
+      "at-the-table": "&nbsp; &nbsp; a) at the table",
+      "in-the-VIP-hall": "&nbsp; &nbsp; b) in the VIP hall",
+      "more-Passion": "More Passion",
+      "tequila-Kiss": "Tequila Kiss",
+      "turn-off-the-electricity": "If you want to turn off the electricity of the club (10 minutes)",
+      "burn-down-the-club": "If you want to burn down the club"
+
+    },
+    "nargile": {
+      "brands": "Brands",
+      "clayCup": "In Clay Cup",
+      "freshFruit": "With Fresh Fruits",
+      "insteadofWater": "Instead of water",
+      "wine": "Wine",
+      "cognac": "Cognac",
+      "absinthe": "Absinthe",
+      "bacardi": "Bacardi",
+      "chivas": "Chivas",
+      "peach": "Peach | Lemon | Cherry",
+      "plumV": "Plum | Grape",
+      "apple": "2 Apples",
+      "pineapple": "Pineapple",
+      "mint": "Mint",
+      "grape": "Grape",
+      "watermelon": "Watermelon",
+      "plum": "Plum",
+      "coconut": "Coconut | Chocolate",
+      "melon": "Melon",
+      "water-melon" : "Watermelon | Melon",
+      "water-melon-pinapple" : "Watermelon | Melon | Pineapple"
+    }
+
+
+  },
+  "history": {
+    "title": "Cabaret Charlotte History",
+    "club": {
+      "title": "The club foundation",
+      "about": "The club was founded in 2002 after the foundation of the first Club-Kamaris by the young founder. To have an  incredible success, it needed to enlarge the club. Immediately after that, the club quickly took its place among the best, due to the effort and enthusiasm of  the created  team."
+    },
+
+    "goal": {
+      "title": "Our goal",
+      "about": "Our main goal is to work on the benefit of  clients. And very soon, it created a huge and a wonderful group of clients who still prefer our club. We try to create a place where everyone will get the expectation for which they came. It is one of our highest goals."
+    },
+
+    "about": {
+      "title": "About the Club’s name",
+      "about": "Many people ask why just \"Cabaret Charlotte\". Well , we just wanted to represent the beauty of a french woman. And after creating this name , every customer liked and approved it ."
+    },
+
+    "charlotteShow": {
+      "title": "Charlotte SHOW",
+      "about": "Our aim is to create the best show programs in Yerevan, which include famous artists' performances, new light and sound effects, which will create the warmest atmosphere ever. And we have already done it. The Best SHOW Club in Yerevan, even in Armenia.  The name of the Club is Cabaret Charlotte. An amazing place for amazing SHOW Program! "
+    }
+  },
+  "contacts": {
+    "title": "Our Contacts",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "hoursText": "Working hours",
+    "charlotteTitle": "Charlotte SHOW",
+    "charlotteHours": "Every day  <br />From 21:00 to 23:30",
+    "stripTitle": "Strip Show",
+    "stripHours": "Every day <br /> From 23:30 to 06:00"
+
+  },
+  "careers": {
+    "title": "Careers",
+    "description": "To work at Cabaret Charlotte, you need to fill simple list and send your CV to info@charlotte.am In our Company, we have a lot of great singers and dancers, we grow up anyone who has talent. If you have talent just join us we will support you and we believe in you.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "subject": "Subject",
+    "message": "Message"
+
+  },
+
+  "footer": {
+    "show": "SHOW",
+    "charlotte": "Charlotte",
+    "stripText": "STRIP Charlotte",
+    "street": "25 M.Baghramyan Ave.",
+    "city": " Yerevan 0019",
+    "hrs": "hrs"
+    }
+  },
+"ru": {
+  "charlotte": "КАБАРЕ ШАРЛОТ",
+  "button": {
+    "information": "Информация",
+    "moreInfo": "Информация",
+    "here": "ЗДЕСЬ",
+    "comingPosters": "Грядущие Постеры",
+    "reservation": "Резервация",
+    "back": "Назад",
+    "letsSee": "Посмотреть",
+    "pressHere": "Нажмите Сюда",
+    "more": "Информация",
+    "send": "Отправить",
+    "up": "Верх",
+    "evening": "Вечер",
+    "showGallery": "Шоу ГАЛЛЕРЕЯ"
+  },
+  "navbar-menu": {
+    "home": "Главная",
+    "show": "Шоу",
+    "special": "Особое",
+    "posters": "Постеры",
+    "strip": "Стрип",
+    "vip": "VIP",
+    "gallery": "Галерея",
+    "menu": "Меню",
+    "standart": "Стандарт",
+    "crazy": "Шальное",
+    "nargile": "Кальян",
+    "events": "Мероприятия",
+    "history": "История",
+    "contacts": "Контакты",
+    "career": "Карьера"
+  },
+
+  "money": {
+    "amd": "драм"
+  },
+
+  "reservation": {
+    "take": "Сделать Резервацию Онлайн",
+    "make": "Сделать Резервацию Онлайн"
+  },
+
+  "crazyMenu": {
+    "text": "Шальное Меню "
+  },
+
+  "main": {
+    "hero": {
+      "strip": "Стрип Шоу",
+      "show": "Шоу Программа",
+      "vip": "V.I.P"
+    },
+    "bottomBanner": {
+      "bannerText": "Измени историю своей жизни"
+    }
+  },
+  "special": {
+    "title": "Особый День - Особое ШОУ",
+    "description": "Мы всегда находимся в процессе создания чего-то нового. Это может быть день рождения или специальный вечер, посвященный кому-либо или чему-либо и делаем мы это достаточно хорошо. Уже 10 лет мы организуем специальные вечера и с удовольствием приглашаем Вас присоединиться к нашим мероприятиям!"
+  },
+
+  "posters": {
+    "title": "Грядущие Постеры",
+    "hero": {
+      "retroSlide": {
+        "title": "РЕТРО ВЕЧЕР",
+        "promoText": "Каждый раз, когда вы хотите, Вы можете организовать Ваш СОБСТВЕННЫЙ вечер!"
+        
+      },
+
+      "hookahSlide": {
+        "title": "КАЛЬЯН вечеринка",
+        "promoText"  :  "<span class=\"text-muted m-b-20 show\">Кстати очень скоро <br /> вы можете получить <br /> свою карту входа, или подарочную <br /> карту или карту со скидкой.<br></span><span class=\"color-gray m-b-20 show\" >Кальян + Стриптиз + Девушки <br />Теперь вы можете себе представить, что может произойти в этот вечер.</span><span class=\"text-muted m-b-80 show\" >КАЖДУЮ СРЕДУ<br />Плата за вход 5000 драм<br />с 23:30 до 06:00</span>"
+        
+        
+      },
+
+      "russianSlide": {
+        "title": "ВЕЧЕР РУССКОЙ МУЗЫКИ",
+        "promoText"  :  "<span class=\"text-muted m-b-20 show\">Русские песни, Русское Шоу, танцы и ...<br></span><span class=\"color-gray m-b-20 show\" >Если вы любите русскую музыку, <br /> добро пожаловать, <br /> пятница- день русской <br />музыки весь вечер.<br></span><span class=\"text-muted m-b-80 show\" КАЖДУЮ ПЯТНИЦУ <br />ПЛАТА ЗА ВХОД 3000 драм <br />От 21:00 до 23:30<br></span>"
+      }
+    }
+  },
+
+  "vip": {
+    "title": "V.I.P Комнаты",
+    "description": "Это специальный V.I.P номер для специальных гостей. Вы можете приятно провести время в этой комнате с отличными девочками и в удивительной атмосфере. Не пропустите вашего удовольствия!",
+    "hours": "Каждый день с 23:30 до 06:00"
+  },
+
+  "gallery": {
+    "show": {
+      "title": "Шарлот ШОУ ГАЛЕРЕЯ",
+      "hours": "Каждый день с 21:00 до 23:30"
+
+    },
+    "strip": {
+      "title": "Шарлот СТРИП ГАЛЕРЕЯ",
+      "hours": "Каждый день с 23:30 до 06:00"
+    }
+  },
+
+  "strip": {
+    "title": "СТРИП Программа <small class=\"text-primary\">(часть 2)</small>",
+    "hours": "Каждый день с 23:30 до 06:00 <br /> Уникальное место, чтобы расслабиться.",
+
+    "cabaret": {
+      "title": "Кабаре Шарлотт",
+      "description": "Это место, где наши очаровательные и красивые девушки помогут вам отвлечься от дневной суеты, вкусить \"запретный плод\" и получить незабываемые впечатления, шоу которое поможет вам окунуться в совершенно иной мир."
+    },
+    "charlotte": {
+      "title": "Девушки Шарлот",
+      "description": "Уникальные девушки со всех уголков мира. Девушки из Армении, России, Украины, Казахстана, Кыргызстана, даже Нигерии. А вскоре и из Европы. Девушку на любой вкус и готовые исполнить любые смелые фантазии. Своими танцами они способны свести с ума любого. Грация, пластика, красота и все это на нашей сцене."
+    },
+    "experience": {
+      "title": "Наш Опыт",
+      "description": "Уже прошло 14 лет со дня нашего основания. Мы были первые в Ереване, по дате создания, по типу клуба и по сей день сохраняем за собой этот статус. На нашей сцене выступали практически все звезды Армянской эстрады, а о наших девочках ходит мольва, как о самых красивых в городе. У нас даже есть постоянные клиеты из России, Франции, Америки, которые при каждом визите в Ереван обязательно посещают наш клуб."
+    },
+    "welcome": {
+      "title": "Добро пожаловать к Нам!",
+      "description": "Мы предлагаем вам отвлечься от вашей работы и рассслабиться в нашем клубе, отдохнуть с нами, и вернуться домой другим человеком!",
+      "hours": "Каждый день с 23:30 до 06:00"
+    }
+  },
+
+  "generalShow": {
+    "title"             : "ШОУ Программа",
+    "part"              : " (Часть 1)",
+    "hours"             : "Каждый день с 21:00 до 23:30",
+    "place"             : "Уникальное место, чтобы увидеть красочное ШОУ.",
+    "special"           : "Особое ШОУ",
+    "events"            : "Мероприятия",
+    "showMan"           : "Шоумен / Певец",
+    "anchorMan"         : "Ведущая / Певица",
+    "dancerActor"       : "Танцоры / Актеры <br />Музыканты",
+    "seeMore"           : "Если Вы хотите увидеть больше, то Вам сюда:<br /> нажмите ШОУ ГАЛЕРЕЯ",
+    "reservationOnline" : "Или можете забронировать онлайн"
+  },
+
+  "siners": {
+      "vardan"      : {
+      "firstName"   : "Вардан",
+      "lastName"    : "Саркисян",
+      "fullName"    : "Вардан Саркисян",
+      "imagesCount" : "6",
+      "about"       : "Прежде всего он лучший шоумен. Один из лучших шоуменов во всей Армении. В дополнение к этому он является хорошим и прекрасным певцом. Он начал свою музыкальную карьеру в 2001 году и создал много видеоклипов, компакт-дисков. Его первый компакт-диск был выпущен в 2005 году. А так же разработал телевизионную программу, которая была названа \"Вдали от дома\". Программу транслируют на телевизионных каналах \"ATV\"\"PanArmenianTV\". Вардан работает в клубе \"Шарлот-Шоу\" уже 10 лет. Так что, мы предлагаем вам, не упустить свой шанс увидеть его.",
+      "listen"      : "Чтобы насладиться голосом и талантом Вардана, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут.Просто нажмите кнопку \"Резервация\"."
+
+    },
+    "arpine": {
+      "firstName": "Арпине",
+      "lastName": "Бекджанян",
+      "fullName"     : "Арпине Бекджанян",
+      "imagesCount": "6",
+      "about": "Она является профессиональной и популярной певицей в Армении. Жена композитора Армана Эльберта. С 1991-93 г. она была солисткой \"Glance\" вокально-инструментального ансамбьля. Многие люди имели возможность насладиться её прекрасным голосом. имени. За эти годы она принимала участие во многих концертах в различных странах мира и былa награждена дипломами за её таланты. В 1996 году она снималась в фильме \"Наш двор\". В течение долгих лет она показывает свой талант, и работает в клубе \"Шарлот-Шоу\".Вы можете насладиться исполнением АРПИНЕ в \"Шарлот-Шоу\" клубе... Спешите и не упустите свой шанс. Добро пожаловать.",
+      "listen": "Чтобы насладиться голосом и талантом Арпине, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут. Просто нажмите кнопку \"Резервация\"."
+    },
+
+    "emin": {
+      "firstName": "Эмин",
+      "lastName": "Давидов",
+      "fullName"     : "Эмин Давидов",
+      "imagesCount": "5",
+      "about": "Эмин Давидов очень известный певиц в Армении. Он известен с 2000 г. Он имеет много музыкального опыта за время своей деятельности. В 16 лет он пел в музыкальной группе Ереванского механико-математического института \"Rainbow\". И в течение этого года он дал 20 благотворительных концертов. Он был в нескольких городах России и в Бейруте с целью организации концертных туров.Теперь он поет в клубе \"Шарлот-Шоу\". Он очень талантливый артист, приходите, чтобы увидеть его шоу в нашем клубе.",
+      "listen": "Чтобы насладиться голосом и талантом Эмина, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут. Просто нажмите кнопку \"Резервация\"."
+    },
+
+    "juice": {
+      "firstName": "Джус",
+      "lastName": "",
+      "fullName"     : "Джус",
+      "imagesCount": "6",
+      "about": "Джус является молодой и очень перспективной певицей, которая пишет музыку, прекрасно танцует и поет в разных стилях. Некоторое время она работала в качестве сольного бэк-вокалиста знаменитой звезды русской поп-музыки Ирины Алегровой. Европейский шоу-бизнес также заинтересован в Джус. Известный клипмейкер \"Anthony Huiskamp\", ​​предложил музыкантке записать три кавер-версии на песни \"Освободи мое сердце\" (Joe Cocker), \"Не то, что вид\" (Анастасия), \"Play\" (J. Lo). После записи этих песен, Энтони показал их известным музыкальным продюсерам в Нидерландах, которым предложил запись сингла Джус основанный на песне \"Lover\". Песня \"Lover\" была записана в городе \"Apeldoorn\". Песня была названа \"Tonight\" и также был снят клип на эту песню. Дуэт \"Tonight\" стал лучшим в 2013 году. В 2013 году первая музыкальная премия Армении состоялась на музыкальном канале \"ВЕК 21\" и Джус была выбрана как \"Лучшая певица года\".Вы можете насладиться исполнением Джус  в клубе \"Шарлот-Шоу\".Не упустите свой шанс.",
+      "listen": "Чтобы насладиться голосом и талантом Джуса, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут. Просто нажмите кнопку \"Резервация\"."
+    },
+    "sofi": {
+      "firstName": "Софи",
+      "lastName": "Даниелян",
+      "fullName"     : "Софи Даниелян",
+      "imagesCount": "6",
+      "about": "Она окончила музыкальный колледж отделения пианино. С 1998 года она начала петь в театре песни им. Оганяна. В 2000 году она выпустила видеоклип \"Я люблю тебя\". Затем она дала множество концертов в Армении. Она имеет более 10 видеоклипов, которые транслируются по разным телеканалам. И уже более 10 лет она пела в клубе \"Шарлот-Шоу\" и участвовал в ряде мероприятий и концертов.Софи очень талантливая и популярная певица в Армении. И увидеть ее выступление можно лишь в клубе \"Шарлот-Шоу\" каждый день.Добро пожаловать",
+      "listen": "Чтобы насладиться голосом и талантом Софи, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут. Просто нажмите кнопку \"Резервация\"."
+    },
+
+    "vigen": {
+      "firstName": "Виген",
+      "lastName": "Агаронян",
+      "fullName"     : "Виген Агаронян",
+      "imagesCount": "6",
+      "about": "Виген поступил в музыкальную школу имени Саят-Новы в 2004 году, которая стала стабильной основой для его карьеры. В 2006 году он участвовал в фестиваль-конкурсе \"золотой голос\" и получил награду \"Гран-при\". В 2016 году он получил степень магистра, после того, как окончил консерваторию.Он также участвовал во многих конкурсах, в том числе международный конкурс \"The Voice\".Он очень молод и имеет очень много поклонников.У него отличный голос, он известный певец и обладатель прекрсного голоса.",
+      "listen": "Чтобы насладиться голосом и талантом Вигена, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут.Просто нажмите кнопку \"Резервация\"."
+    },
+
+    "tina": {
+      "firstName": "Тина",
+      "lastName": "Кей",
+      "fullName"     : "Тина Кей",
+      "imagesCount": "6",
+      "about": "Она является артистом цирка, и акробатом. Она начала свою танцевальную карьеру с 3-х лет в \"Dream\" танцевальном ансамбле. С 1995 года она начала выступать на различных цирковых постоновках в Ереване. Она сотрудничала с советским народным артистом Андреем Чуга. В этот период она поставила своё первое выступление в цирке, которое состояло из элементов йоги, 15 видов змей, 2 крокодила, ящерица, ядовитые скорпионы и пауки. В 2010 году она основала \"Tina Key\" танцевальную и цирковую студию. В 2011 году она участвовала в международном конкурсе \"Лучший из лучших\".Тина Кей является единственным человеком по всей Армении, кто обладает такими талантами.И она выступает  в клубе \"Шарлот-Шоу\".",
+      "listen": "Чтобы насладиться голосом , талантом и роскошным танцем Тина Кейа, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут. Просто нажмите кнопку \"Резервация\"."
+    },
+
+    "sequ": {
+      "firstName": "Секу",
+      "lastName": "",
+      "fullName"     : "Секу",
+      "imagesCount": "4",
+      "about": "Он родился в Бразилии, и у него есть удивительный талант и голос. Он вырос в семье музыкантов, может петь самые разные песни, такие как песни Джеймса Брауна и других известных исполнителей.\"Шарлот-Шоу\" клуб является одним из немногих шоу-клубов во всей Армении, где и поет Секу.Он живет в Армении более 5 лет и за это время он работает у нас в клубе.Вы можете слушать его в течении недели в клубе \"Шарлот-Шоу\".",
+      "listen": "Чтобы насладиться голосом и талантом Секу, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут.Просто нажмите кнопку \"Резервация\"."
+    },
+    "hayana": {
+      "firstName": "Аяна",
+      "lastName": "",
+      "fullName"     : "Аяна",
+      "imagesCount": "6",
+      "about": "Аяна является одной из лучших певцов Армении. Хотя она училась на юриста, Аяна нашла свой талант сама и начала свою карьеру в качестве певицы. Сейчас она является одной из лучших во всей Армении.Раньше она жила и работала в Санкт-Петербурге.Сейчас она живет в Армении и работает на  в клубе \"Шарлот-Шоу\".Добро пожаловать в клубе, чтобы оценить её талант.",
+      "listen": "Чтобы насладиться голосом и талантом Аяаны, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут.Просто нажмите кнопку \"Резервация\"."
+    },
+    "ilona": {
+      "firstName": "Илона",
+      "lastName": "",
+      "fullName"     : "Илона",
+      "imagesCount": "4",
+      "about": "Илона удивительная певица. Хоть раз, вы должны услышать, как она поет. Вы, конечно же, будете приятно удевлены. Она актриса и певица. В 2000-2003 гг. училась в Государственном университете искусств Эстрады и джаз-колледжа, в 2005-2009 годах она также училась в консерватории имени Комитаса. С 2009-2010 гг. она получила степень магистра. Это означает, что у нее есть удивительный голос и длинный путь опыта.Сейчас она работает во многих местах, таких как джаз-клуб \"Поплавок\", \"Малхас\",  \"Шарлот-Шоу\".Так же используя свой талант джаз воколистка дала ряд концертов в Москве, Ростове, Тегеране и Париже.Так что просим оценить ее талант у нас в клубе...",
+      "listen": "Чтобы насладиться голосом и талантом Илоны, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут.Просто нажмите кнопку \"Резервация\"."
+    },
+
+    "iveta": {
+      "firstName": "Ивета",
+      "lastName": "Едигарян",
+      "fullName"     : "Ивета Едигарян",
+      "imagesCount": "4",
+      "about": "Она профессиональная актриса и хорошая певица. Ивета начала свою карьеру, когда ей было 5 лет. Она сыграла множество ролей в различных фильмах, например «Такси нема». Ивета очень известная в Армении благодаря ТВ-шоу. Сос Саркисян оценил и заявил, что она лучшая актриса в 2001 году.Она одна из тех кто может настроить публику и создать настроение.Сейчас Ивета работает  в клубе \"Шарлот-Шоу\", если вы хотите, насладиться шоу Иветы, приходите к нам.",
+      "listen": "Чтобы насладиться голосом и талантом Иветы, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут.Просто нажмите кнопку \"Резервация\"."
+    },
+    "armen": {
+      "firstName": "Армен (танцор)",
+      "lastName": "",
+      "fullName"     : "Армен (танцор)",
+      "imagesCount": "5",
+      "about": "Aрмен является профессиональным танцором. Он начал свою карьеру, когда ему было 5 лет. В возрасте 10 лет он поступил в танцевальную студию \"Ритм\" под руководством Ара Мхояна. С 2002 года он создал свою собственную студию танца, которая была названа «Фиеста». Затем в 2006 году он получил предложение работать в танцевальной студии \"ВИВАТ\", где ему предложили должность директора студии. Танцевальная студия \"Виват\" сделала постановку около 30 танцев в различных танцевальных жанрах, и все эти постановки завоевали 1-ые места в Армении.Отметим также что он был танцором в студии \"MATADOR\", который является одним из лучших и перспективных студии в республике. Так что если вы хотите,увидеть профессиональный и художественный танец, вам необходимо посетить наш шоу-клуб.Добро пожаловать в Шарлотте ШОУ клуба.",
+      "listen": "Если хотите увидеть артистичный танец Армена, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут. Просто нажмите кнопку \"Резервация\"."
+    },
+    "yana": {
+      "firstName": "Яна (танцовщица)",
+      "lastName": "",
+      "fullName"     : "Яна (танцовщица)",
+      "imagesCount": "5",
+      "about": "Яна является одной из лучших танцоров в Армении. Вы должны увидеть, как она хороша на сцене. Она знает, как использовать каждый сантиметр сцены, чтобы показать всю чувственность и эмоциональность танца. Яна обладает очень гибким телом и необычным подходом к танцу. Многие приезжали из США, специально чтобы увидеть ее танцы и навыки актера. В 2001 году она начала свою преподавательскую карьеру. Так же Яна танцевала во многих дорогих и престижных ресторанах Армении.Сейчас она танцует в клубе \"Шарлот-Шоу\".Не упустите свой шанс увидеть её танец.И оценить по достоинству.",
+      "listen": "Если хотите увидеть артистичный и роскошный танец Яны, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут.Просто нажмите кнопку \"Резервация\"."
+    },
+    "hrant": {
+      "firstName": "Грант (скрипач)",
+      "lastName": "",
+      "fullName"     : "Грант (скрипач)",
+      "imagesCount": "6",
+      "about": "Он профессиональный музыкант. Когда ему было 7 лет он поступил в специализированную музыкальную школу, чтобы научиться играть на скрипке, и окончил школу в 1983 г. Его исполнение музыки может изменить ваш мир. Его музыка поможет вам переместиться в другой мир. Многие люди после тяжелого рабочего дня, приходят в наш клуб, чтобы послушать его волшебную музыку, а многие даже говорят, что они нуждаются в его игре, чтобы расслабиться.Мы предлагаем Вам отдохнуть и расслабиться  в клубе \"Шарлот-Шоу\".",
+      "listen": "Чтобы насладиться музыкой скрипача Гранта, Вы можете забронировать столик для Вас и Ваших друзей, это займет несколько минут.Просто нажмите кнопку \"Резервация\"."
+    }
+  },
+  "events": {
+    "title": "Мы сотворяем что-то особенное. Чтобы сделать ваш праздник уникальным.",
+    "hero": {
+      "stagpartySlide": {
+        "title": "МАЛЬЧИШНИК",
+        "description": "Новое предложение в Ереване Все Организационные хлопоты мы возьмем на себя, и абсолютно бесплатно"
+      },
+
+      "birthdaypartySlide": {
+        "title": "Вечеринка в честь Дня Рождения",
+        "description": "Новое предложение в Ереване Все Организационные хлопоты мы возьмем на себя, и абсолютно бесплатно"
+      },
+
+      "henpartySlide": {
+        "title": "ДЕВИШНИК",
+        "description": "Новое предложение в Ереване Все Организационные хлопоты мы возьмем на себя, и абсолютно бесплатно"
+      },
+      "closedpartySlide": {
+        "title": "Закрытая Вечеринка",
+        "description": "Новое предложение в Ереване Все Организационные хлопоты мы возьмем на себя, и абсолютно бесплатно"
+      }
+    },
+    "purposals": {
+      "title": "Наши предложения",
+      "stag": {
+        "title": "МАЛЬЧИШНИК",
+        "descriptionTitle": "Для данного события у вас есть, ",
+        "description": "<li> 10% скидка на вход в клуб</li><li>а также Один Приватный танец</li><li> И профессиональная команда организаторов от нас бесплатно.</li>"
+        
+      },
+
+      "birthday": {
+        "title": "Birthday Party",
+        "descriptionTitle" : "Ваш День рождения это особый праздник для Нас.И мы готовы сделать его немного приятнее.",
+        "description": " <li>10% скидка для входа в клуб</li><li> Индивидуальный танец </li>И все это счет заведения..."
+        
+      },
+
+      "hen-party": {
+        "title": "HEN-PARTY",
+        "description": "Девишник один из незабываемых событий, если организовать это красиво. А мы знаем, как сделать праздник незабываемым. Для вас, дорогие девочки, мы организуем все блестяще и по высшему разряду. Не стесняйтесь..."
+        
+      },
+      "closedParty": {
+        "title": "Closed Party",
+        "description": "Для этой вечеринки минимальное число гостей должно составлять 60 человек. Мы обеспечим вам незабываемую вечеринку, вы и ваши друзья безусловно останетесь довольны. Так же вас ждут подарки от КАБАРЕ ШАРЛОТ."
+      
+      },
+      "contactusText1": "Если это интересно вам, пожалуйста, свяжитесь с нами.",
+      "contactusText2": "чтобы связаться с нами"
+
+    }
+  },
+  "menu": {
+    "standard": {
+      "title": "Стандарт меню",
+      "entrance": "Плата за вход СТРИП 5000-10000 драм ШОУ 3000 драм",
+
+      "Beluga": "Белуга",
+      "GreyGoose": "Грей Гус",
+      "Absolutaroma": "Абсолют арома",
+      "Absolut": "Абсолют",
+      "Finlandia": "Финляндия",
+      "Koskenkorva": "Коскенкорва",
+      "Russianstandard": "Русский Стандарт",
+      "Smirnoff": "Смирнофф",
+      "Silver": "С серебром",
+      "OlmecaSilver|Gold": "Ольмека Сильвер | голд",
+      "LunazolSilver|Anejo": "Лунизул Сильвер | анехо",
+      "SierraSilver|Gold": "Сиерра Сильвер | голд",
+      "Patron(silver|anejo)": "Патрон (Сильвер | аньехо )",
+      "BlueLabel": "Блю Лейбл",
+      "Chivas21": "Чивас 21",
+      "Macallan12": "Макаллан 12",
+      "Chivas18": "Чивас 18",
+      "Chivas12": "Чивас 12",
+      "Blacklabel": "Блэк лэйбл",
+      "JackDaniels": "Джек Дэниэлс",
+      "Jameson": "Джемсон",
+      "Redlabel": "Ред лейбл",
+      "JimBeam": "Джим Бим",
+      "FamousGrouse": "Феймос Граус",
+      "Ballantine's": "Баллантинес",
+      "HavanaClub7": "Гавана Клаб 7",
+      "HavanaClub3": "Гавана Клаб 3",
+      "Bacardioakheart": "Бакарди оакхарт",
+      "Bacardisuperior": "Бакарди супериор",
+      "Bacardiblack": "Бакарди блэк",
+      "CaptainMorganBlack": "Капитан Морган блак",
+      "BombaySapphire": "Бомбей Сапфир",
+      "Beefeater": "Бифитер",
+      "Gordon's": "Гордонс",
+      "HennessyXO": "Хеннесси XO",
+      "HennessyVSOP": "Хеннесси VSPO",
+      "Nairi": "Наири",
+      "Tonakan": "Тонакан",
+      "Akhtamar": "Ахтамар",
+      "Selected": "Отборный",
+      "Ani": "Ани",
+      "Ararat5*": "Аратат 5*",
+      "Sambuca": "Самбука",
+      "GrandMarnier": "Гранд Марнье",
+      "Kahlua": "Калуа",
+      "Cointreau": "Куантро",
+      "Baileys": "Бейлис",
+      "Malibu": "Малибу",
+      "Jägermeister": "Егермейстер",
+      "AstiMartiniRose": "Асти Мартини Россе",
+      "AstiMartini": "Асти Мартини",
+      "AstiMartiniProsecco02": "Асти Мартини просеко 0.2",
+      "Armenianmoist": "Армянское полусухое",
+      "Armeniamoist": "Армения полусухое",
+      "AbsintheKsięte": "Абсент ксента",
+      "Campari": "Кампари",
+      "Martini(Bianco)": "Мартини (Бьянко)",
+      "Mariinsky(Rosso)": "Мариинки (Россо)",
+      "Becherovka": "Бехеровка",
+      "Ijevan": "Иджеван",
+      "Vernashen": "Вернашен",
+      "Pomegranate": "Гранатовый",
+      "Areni2010": "Арены 2010",
+      "Areni1993": "Арены 1993",
+      "VillaAntinori": "Вилла Антинори",
+      "Heineken": "Хейнекен",
+      "Miller": "Миллер",
+      "Aleksandrapol": "Александрополь",
+      "Kotayk": "Котайк",
+      "Kilikia": "Киликия",
+      "Gyumri": "Гюмри",
+      "Charlotte": "Шарлотт",
+      "Lamborghini": "Ламборджини",
+      "LongIslandIcedTea": "Лонг Айленд Айс Ти",
+      "Amadeus": "Амадей",
+      "Mojito": "Мохито",
+      "Cocaine": "Какаин",
+      "Daiquiri": "Дайкири",
+      "Pinacolada": "Пина колада",
+      "TequilaSunrise": "Текила санрайз",
+      "Sexonbeach": "Секс на пляже",
+      "Orgazm": "Оргазм",
+      "B-52": "Б-52",
+      "Margarita": "Маргарита",
+      "GinTonic": "Джин Тоник",
+      "CampariOrange": "Кампари Оранже",
+      "Tequilaboom": "Текила Бум",
+      "Cosmopolitan": "Космополитен",
+      "CubaLibre": "Куба Либре",
+      "BloodyMary": "Кровавая Мери",
+      "Screwdriver": "Отвертка",
+      "Charlotte": "Шарлотт",
+      "Fruit": "Фруктовый",
+      "Mojito": "Мохито",
+      "Lactic": "Молочный",
+      "Strawberrygarden": "Клубничный сад",
+      "Sweetkiss": "Сладкий поцелуй",
+      "Chocolate": "Шоколадный",
+      "Strawberry": "Клубника",
+      "Pineapple": "Ананас",
+      "Multi": "Мульти",
+      "Grapefruit": "Грейпфрут",
+      "Orange": "Апельсин",
+      "Kiwi": "Киви",
+      "Lemon": "Лимон",
+      "Banana": "Банан",
+      "Carrot": "Морковь",
+      "Energydrinks": "Энергетические напитки",
+      "Tonic": "Тоник",
+      "Okroshka": "Окрошка",
+      "Naturaljuice": "Натуральный сок",
+      "Pepsi": "Пепси",
+      "Cola|Fanta|Sprite": "Коля | Фанта | Спрайт",
+      "Mineralwater": "Минеральная вода",
+      "Water": "Вода",
+      "Tan": "Тан",
+      "Glace": "Глясе",
+      "Cappuccino": "Капучино",
+      "Espresso": "Эспрессо",
+      "Latte": "Латте",
+      "Americano": "Американкой",
+      "Instantcoffee": "Растворимое кофе",
+      "Orientalcoffee": "Восточный кофе",
+      "Icedtea": "Холодный чай",
+      "Green|Black|Hibiscus": "Зеленый |Черный | Каркаде",
+      "Jerky": "Джерки",
+      "Pistachios": "Фисташки",
+      "Chips": "Чипсы",
+      "Smokedcheese": "Копченый сыр",
+      "CarrotwithLemon": "Морковь с Лимоном",
+      "SmokedTailsCancer": "Копченые Раковые Хвосты",
+      "Meatassorted": "Мясное ассорти",
+      "Cheesesassorted": "Сырное ассорти",
+      "Nikalashka": "Никалашка",
+      "Lime": "Лайм",
+      "Saltedcucumbers": "Соленые огурцы",
+      "Olives": "Оливки",
+      "Lemon": "Лимон",
+      "Bread": "Хлеб",
+      "Charlotte": "Шарлотт",
+      "Amadeus": "Амадеус",
+      "Caesar": "Цезарь",
+      "Metropolitan": "Столичный",
+      "Crab": "Крабовый",
+      "Chicken": "Куринны",
+      "Greek": "Греческий",
+      "Mushroom": "Грибной",
+      "Summer": "Летний ",
+      "BrandedPizzaCharlotte": "Фирменная Пицца Шарлотт",
+      "AmadeusPizza": "Пицца Амадеус",
+      "PizzawithHam": "Пицца с Ветчиной",
+      "Pizzawithchicken": "Пицца с курятиной",
+      "Pizzawithmushrooms": "Пицца с грибами",
+      "Pizzawithsalami": "Пицца с салями",
+      "Ajariankhachapuri": "Аджарское хачапури",
+      "Hamburger": "Гамбургер",
+      "Sandwich": "Сэндвич",
+      "Sandwichwithchicken": "Бутерброд с курицей",
+      "Empanadas2pc": "Блинчики с мясом 2 pc",
+      "Pancakeswithmushrooms2pc": "Блинчики с грибами 2 pc",
+      "MagicCharlotte": "Волшебная Шарлотта",
+      "Beefsteak": "Говяжий стейк",
+      "FriedChicken": "Жареный Цыпленок",
+      "WingsLouisiana": "Крылышки Луизианы",
+      "Chickenfilletwithspinach": "Куриное Филе с шпинатом",
+      "Mexicanlegs": "Мексиканский ножки",
+      "AssortedfruitsCharlotte": "Фруктовое ассорти Charlotte",
+      "Assortedfruits": "Фруктовое ассорти",
+      "FruitFondue": "фрукты фондю",
+      "Fruitsalad": "Фруктовый салат",
+      "IcecreamCharlotte": "Мороженое Шарлотта",
+      "Friedicecream": "Жареное мороженое",
+      "Chocolatebar": "Плитка шоколада",
+      "Icecream": "Мороженое",
+      "FerreroRocher": "Ферреро Рошер",
+      "Raffaello": "Рафаэлло",
+      "Cigaronne": "Сигароне",
+      "Dunhill": "Данхилл",
+      "Parliament": "Парламент",
+      "Davidoff": "Давидофф",
+      "Kent": "Кент",
+      "Marlboro": "Мальборо",
+      "Ararat": "Арарат",
+      "Karelia": "Карелия",
+      "Lighter": "Зажигалка",
+      "Chewinggum": "Жевательная резинка",
+
+      "vodka": "Водка",
+      "tequila": "Текила",
+      "whiskey": "Виски",
+      "rum": "Ром",
+      "gin": "Джин",
+      "cognac": "Коньяк",
+      "liqueu": "Ликер",
+      "champagne": "Шампанское и Игристые вина",
+      "aperitif": "Аперитив",
+      "wine": "Вино",
+      "beer": "Пиво",
+      "alcohol": "Алкогольные коктейли",
+      "nonalcohol": "Безалкогольные  коктейли",
+      "fresh": "Фреш",
+      "cold": "Прохладные напитки",
+      "coffee": "Кофе | Чай",
+      "beerSnacks": "Пивные закуски",
+      "snacks": "Закуски",
+      "salads": "Салаты",
+      "express": "Экспресс Блудии",
+      "hot": "Горячие Блюда",
+      "dessert": "Десерт",
+      "cigarettes": "Сигареты",
+      "service": "10% плата за обслуживание"
+    },
+    "crazy": {
+      "title": "Шальное Меню",
+      "Song-order": "Заказать песню",
+      "danceOrder": "Заказать танец",
+      "consummation": "Консуммация (10 минут.)",
+      "dancer": "&nbsp; &nbsp; а). танцор",
+      "waitress": "&nbsp; &nbsp; б). официантка",
+      "Table-Dance": "Танцы на столе ",
+      "privateDance": "Частный танец",
+      "completePrivate": "Полный частный",
+      "lesbian-dance": "Лесбийский танец",
+      "romantic-erotic": "Романтик-эротический танец с танцовщицей или официанткой",
+      "at-the-table": "а). на столе",
+      "in-the-VIP-hall": "б). в VIP-зале",
+      "more-Passion": "Больше страсти",
+      "tequila-Kiss": "Текила Поцелуй",
+      "turn-off-the-electricity": "Если вы хотите, чтобы отключить электричество клуба (10 минут.)",
+      "burn-down-the-club": "Если вы хотите сжечь клуб"
+
+    },
+    "nargile": {
+      "brands": "Бренды",
+      "clayCup": "В Кубке Глины",
+      "freshFruit": "Со свежими фруктами",
+      "insteadofWater": "Вместо воды",
+      "wine": "Вино",
+      "cognac": "Коньяк",
+      "absinthe": "Абсент",
+      "bacardi": "Бакарди",
+      "chivas": "Чивас",
+      "peach": "Персик | Лимон | Вишня",
+      "plumV": "Сливы | Виноград",
+      "apple": "2 Яблоки",
+      "pineapple": "Ананас",
+      "mint": "Мята",
+      "grape": "Виноград",
+      "watermelon": "Арбуз",
+      "plum": "Cливы",
+      "coconut": "Кокосовое | Шоколад",
+      "melon": "Дыня",
+      "water-melon" : "Арбуз | Дыня",
+      "water-melon-pinapple" : "Арбуз | Дыня | Ананас"
+    }
+
+
+  },
+
+  "history": {
+    "title": "История о Кабаре Шарлот",
+    "club": {
+      "title": "Основание Клуба",
+      "about": "\"Cabaret Charlotte\" был основан в 2002 году в результате больших усилий и профессионального подхода нашей команды, цель которой является  создание чего-то нового и интересного. И уже 14 лет мы продолжаем приятно удивлять всех наших гостей, которые не раз выражали свою благодарность за высокое качество обслуживания и головокружительное \"SHOW\", участницы которого сводят с ума любого своей красотой и мастерством."
+    },
+
+    "goal": {
+      "title": "Наша Цель",
+      "about": "Наша цель удовлетворить самый тонкий и изысканный вкус. И мы уверены что наши клиенты именно из тех, кто понимает и ценит настоящее \"SHOW\"."
+    },
+
+    "about": {
+      "title": "О Названии Клуба",
+      "about": "Название клуба выбрано совсем не случайно. Оно ассоциируется с безупречной красотой французских женщин и горячих кабаре. Как только произвести слово \"Шарлот\", сразу  появляется желание находиться в тёплой атмосфере клуба."
+    },
+
+    "charlotteShow": {
+      "title": "Шарлот ШОУ",
+      "about": "Наша цель состоит в том, чтобы создать лучшую шоу-программу в Ереване, которая включает в себя выступления известных артистов, новые световые и звуковые эффекты, которые всегда создадут теплую атмосферу.И мы уже добились этого. Лучший шоу-клуб во всем Ереване, даже осмелимся сказать во всей Армении. А название этого клуба \"Кабаре Шарлотт\".Удивительное место где вы можете насладиться удивительной шоу программой!"
+    }
+  },
+
+  "contacts": {
+    "title": "Наши Контакты",
+    "name": "Имя",
+    "email": "Эл. адрес",
+    "subject": "Тема",
+    "message": "Сообщение",
+    "address": "Проспект им. М.Баграмяна 25 Ереван 0019",
+    "contact": "info@charlotte.am Тел.:       +374 10 277020 Мобильный: +374 41 277020 (24/7)",
+    "hoursText": "Рабочее время",
+    "charlotteTitle": "Шарлот ШОУ",
+    "charlotteHours": "Каждый день <br /> С 21:00 до 23:30",
+    "stripTitle": "Шарлот СТРИП",
+    "stripHours": "Каждый день <br /> С 23:30 до 06:00"
+
+  },
+  "careers": {
+    "title": "Карьера",
+    "description": "Для того, чтобы работать в Кабаре Шарлот, Вам необходимо заполнить список.В нашей компании, много хороших и талантливых артистов и танцоров, мы растем и вместе с нами растут наши артисты. Если у вас есть талант присоединяйтесь к нам, мы верим в Вас и всегда готовы поддержать.",
+    "name": "Имя",
+    "email": "Эл. адрес",
+    "phone": "Номер мобильного",
+    "address": "Адрес",
+    "subject": "Название Вакансии",
+    "message": "Коротко о Вас и Вашем Опыте."
+
+  },
+
+  "footer": {
+    "show"      : "ШОУ",
+    "charlotte" : " ШАРЛОТТ",
+    "stripText" : "СТРИП ШАРЛОТТ",
+    "street"    : "Проспект им. М.Баграмян 25",
+    "city"      : " Ереван 0019",
+    "hrs"       : "ч"
+    }
+  }
+}

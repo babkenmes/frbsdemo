@@ -1,0 +1,42 @@
+﻿<div class="inmodal">
+    <div class="modal-header">
+        <span>
+            {{survey.title}}
+        </span>
+        <button type="button" class="close" ng-click="closeSurveyModal()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-md-12" ng-repeat="answer in presentation.survey.answers">
+                                <p class="">
+                                    <h3>{{answer.question.text}}</h3></p>
+                                <ul class="list-group" ng-hide="answer.question.type =='text'">
+                                    <li class="list-group-item" ng-repeat="option in answer.question.options track by $index">
+                                        <label ng-if="answer.question.type =='single'">
+                                            <input ng-disabled="presentation.survey.isFilledByDoctor" icheck type="radio" ng-model="answer.docAnswers" ng-value="option.name">  {{option.title}}
+                                        </label>
+                                        <label ng-if="answer.question.type =='multiple'">
+                                            <input ng-disabled="presentation.survey.isFilledByDoctor" icheck type="checkbox" ng-model="answer.docAnswers[option.name]"> {{option.title}}
+                                        </label>
+                                    </li>
+                                </ul>
+                                <textarea ng-disabled="presentation.survey.isFilledByDoctor" ng-if="answer.question.type =='text'" ng-model="answer.docAnswers"></textarea>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer" ng-hide="presentation.survey.isFilledByDoctor">
+        <button ng-click="submitSurvey()" class="btn btn-primary">Отправить</button>
+    </div>
+</div>

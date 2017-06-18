@@ -1,0 +1,67 @@
+﻿<div class="inmodal">
+    <div class="modal-header">
+        <span ng-if="User._id == undefined">
+            Новый Мед. Представитель
+        </span>
+        <span ng-if="User._id != undefined">
+            Редактировать Мед. Представителя
+        </span>
+        
+        <button type="button" class="close" ng-click="closeModal()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form role="form">
+            <div class="form-group">
+                <label>Имя Профиля</label> <input type="text"
+                                                 placeholder=""
+                                                 class="form-control" ng-model="User.username">
+            </div>
+            <div class="form-group">
+                <label>Имя</label> <input type="text"
+                                                 placeholder=""
+                                                 class="form-control" ng-model="User.firstName">
+            </div>
+            <div class="form-group">
+                <label>Фамилия</label> <input type = "text"
+                                                placeholder=""
+                                                class="form-control" ng-model="User.lastName">
+            </div>
+			 <div class="form-group">
+						
+                            <label>API key</label> <input type="text"
+                                                            placeholder=""
+                                                            class="form-control" ng-model="User.apiKey">
+                        </div>
+						<div class="form-group">
+                            <label>Auth domain</label> <input type="text"
+                                                            placeholder=""
+                                                            class="form-control" ng-model="User.authDomain">
+                        </div>
+						<div class="form-group">
+                            <label>Databse URL</label> <input type="text"
+                                                            placeholder=""
+                                                            class="form-control" ng-model="User.databaseURL">
+                        </div>
+						<div class="form-group">
+                            <label>Storage Bucket</label> <input type="text"
+                                                            placeholder=""
+                                                            class="form-control" ng-model="User.storageBucket">
+                        </div>
+						<div class="form-group">
+                            <label>Messaging Sender Id</label> <input type="text"
+                                                            placeholder=""
+                                                            class="form-control" ng-model="User.messagingSenderId">
+                        </div>
+        </form>
+        <p ng-show="message">{{message}}</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary pull-right m-t-n-xs" ng-click="saveModal()">
+            
+                Сохранить
+            
+        </button>
+    </div>
+</div>

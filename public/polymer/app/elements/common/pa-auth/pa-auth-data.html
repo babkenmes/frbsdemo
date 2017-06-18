@@ -1,0 +1,60 @@
+<dom-module id="pa-auth-data">
+  <template>
+	<paper-button on-tap="settings" hidden$="[[user]]">Settings</paper-button>
+    <paper-button on-tap="signIn" hidden$="[[user]]">Sign in</paper-button>
+    <paper-button on-tap="signOut" hidden$="[[!user]]">Sign out</paper-button>
+  </template>
+  <script>
+    (function() {
+      'use strict';
+      Polymer({
+        is: 'pa-auth-data',
+
+        properties: {
+          user: {
+            type: Object,
+            notify: true
+          },
+
+          statusKnown: {
+            type: Object
+          },
+        },
+		settings:function(){
+			window.location.href = window.location.origin;
+		},
+        signIn: function() {
+          var self = this;
+          var provider = new firebase.auth.GoogleAuthProvider();
+          firebase.auth().signInWithPopup(provider).signInWithPopup().then( function( result ) {
+              
+            self.getJson().then(function( data ) {
+              console.log( data );
+            },function( error ) {
+              console.log ( error )
+            })
+            
+          });
+          return a;
+        },
+      
+        signOut: function() {
+          return firebase.auth().signOut();
+        },
+       getJson : function () {
+
+        var a = new Promise( function ( resolve, reject ) {
+          var ref = firebase.database().ref();
+          ref.on('value',function( data ) { 
+            resolve( data.val() )
+          },function( data ){
+            reject( data.code )
+          });
+        });
+        return a;
+      },
+      });
+    })();
+  </script>
+
+</dom-module>

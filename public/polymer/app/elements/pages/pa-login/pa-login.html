@@ -1,0 +1,108 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<link rel="import" href="../../../../bower_components/polymer/polymer.html">
+<dom-module id="pa-login">
+  <template>
+    <style>
+    :host {
+      display: block;
+    }
+    
+    :host #wrapper {
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+    </style>
+   
+    <div id="wrapper" hidden$="{{isHidden}}">
+      <paper-button on-tap="signIn">Sign in</paper-button>
+      <paper-toast id="toast2" duration="0" text="You have no access permission to this resource.">
+        <paper-button class="yellow-button" onclick="document.querySelector('#toast2').toggle()">Close</paper-button>
+      </paper-toast>
+    </div>
+  </template>
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'pa-login',
+
+      ready: function() {
+        var self = this;
+        try {
+          firebase.app();
+        } catch (e) {
+          var config = {
+            apiKey: "AIzaSyCu153L_WHaKajrQjdlz7qFyIsxw4c2N64",
+            authDomain: "charlotte-eb580.firebaseapp.com",
+            databaseURL: "https://charlotte-eb580.firebaseio.com",
+            storageBucket: "charlotte-eb580.appspot.com",
+            messagingSenderId: "210753226044"
+          };
+		  
+          firebase.initializeApp(config);
+        }
+        firebase.auth().onAuthStateChanged(function(user) {
+          console.log(user)
+          if (user) {
+            self.isHidden = true;
+          } else {
+			self.signIn();
+            self.isHidden = false;
+          }
+        });
+      },
+
+      properties: {
+        user: {
+          type: Object
+        },
+        isHidden: {
+          type: Boolean
+        }
+
+      },
+      signIn: function() {
+        var self = this;
+        var provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+          self.getJson().then(function(data) {
+            self.isHidden = true;
+          }, function(error) {
+            self.isHidden = false;
+            self.$$('#toast2').open();
+          })
+        });
+      },
+      getJson: function() {
+
+        var a = new Promise(function(resolve, reject) {
+          var ref = firebase.database().ref();
+          ref.on('value', function(data) {
+            resolve(data.val())
+          }, function(data) {
+            reject(data.code)
+          });
+        });
+        return a;
+      },
+    })
+
+  })();
+  </script>
+</dom-module>

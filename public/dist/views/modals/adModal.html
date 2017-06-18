@@ -1,0 +1,57 @@
+﻿<div class="inmodal">
+    
+        <div class="modal-header">
+            <span ng-if="ad._id == undefined">
+                Новая Реклама
+            </span>
+            <span ng-if="ad._id != undefined">
+                Редактировать Материал
+            </span>
+            <button type="button" class="close" ng-click="closeModal()">
+                <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+            </button>
+        </div>
+        <div class="modal-body">
+
+            <div class="form-group">
+                <label>Название</label> <input type="text"
+                                                 placeholder=""
+                                                 class="form-control" ng-model="ad.title">
+            </div>
+
+
+            <div class="form-group" ng-show="!ad._id">
+                <label>Эскиз</label> <input name="thumbnail" type="file"
+                                                            placeholder=""
+                                                            class="form-control" file-model="ad.thumbnail">
+            </div>
+
+            <div class="form-group" ng-show="!ad._id">
+                <label>Картинка</label> <input name="blob" type="file"
+                                                        placeholder=""
+                                                        class="form-control" file-model="ad.blob">
+            </div>
+            <div class="form-group">
+                <label>Описание</label> <textarea name="description" placeholder="" rows='4'
+                                                     class="form-control" ng-model="ad.description"></textarea>
+            </div>
+
+            <div>
+
+            </div>
+
+            <p ng-show="message">{{message}}</p>
+        </div>
+        <div class="modal-footer">
+           
+            <div class="pull-right">
+                <button type="button" class="btn btn-primary m-t-n-xs" ng-click="saveAd()">
+                    
+                        Сохранить
+                    
+                </button>
+            </div>
+           
+        </div>
+    
+</div>

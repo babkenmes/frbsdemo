@@ -1,0 +1,47 @@
+﻿<div class="inmodal">
+    <div class="modal-header">
+        <span>
+            Отчет
+        </span>
+        <button type="button" class="close" ng-click="closeXlsxModal()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <h3>Филтрация по запланированной дате</h3>
+                <div class="row">
+            <div class="col-md-6">
+                <div class="form-group medInf-datepicker">
+                    <label>От</label>
+                    <datepicker date="filter.xlsxFromDate"></datepicker>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group medInf-datepicker">
+                    <label>До</label>
+                    <datepicker date="filter.xlsxToDate"></datepicker>
+                </div>
+            </div>
+            <div class="col-md-12"  ng-show="showProgress">
+                <uib-progressbar max="max" value="xlsxGenProgress"><span style="color:white; white-space:nowrap;">{{xlsxGenProgress}}% / 100%</span></uib-progressbar>
+            </div>
+        </div>
+        <p ng-show="message">{{message}}</p>
+    </div>
+    <div class="modal-footer">
+        <div class="pull-right">
+            <button class="btn btn-default" ng-click="closeXlsxModal()">
+                <i class="fa fa-trash"></i>
+                Отменить
+            </button>
+            <a href="{{siteURL + xlsxURL}}" class="btn btn-primary" ng-show="isGenerated(xlsxURL,filter.xlsxFromDate, filter.xlsxToDate) && xlsxGenProgress == 100">
+                <i class="fa fa-download"></i>
+                Скачать
+            </a>
+            <button class="btn btn-primary" ng-click="generateXlsx()" ng-hide="isGenerated(xlsxURL,filter.xlsxFromDate, filter.xlsxToDate)">
+                <i class="fa fa-save"></i>
+                Сгенерировать отчет
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿<div class="inmodal">
+    <div class="modal-header">
+        <span>{{confirmModalTitle}}</span>
+        <button type="button" class="close" ng-click="closeConfirmModal()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <h3>{{confirmModalMessage}}</h3>
+    </div>
+    <div class="modal-footer text-center">
+        <button class="btn btn-{{confirmModalConfirmColor}} m-t-n-xs" ng-click="confirmModalConfirmAction()">
+
+            {{confirmModalConfirm}}
+
+        </button>
+        <button class="btn btn-{{confirmModalCancelColor}} m-t-n-xs" ng-click="closeConfirmModal()">
+
+            {{confirmModalCancel}}
+
+        </button>
+    </div>
+</div>

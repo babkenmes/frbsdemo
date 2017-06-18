@@ -1,0 +1,72 @@
+﻿<div class="inmodal">
+    <div class="modal-header">
+
+        <span ng-if="doctor._id == undefined">
+            Новый Доктор
+        </span>
+        <span ng-if="doctor._id != undefined">
+            Редактировать Доктора
+        </span>
+
+        <button type="button" class="close" ng-click="closeModal()">
+            <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form role="form">
+            <div class="form-group">
+                <label>Имя</label> <input type="text" ng-class="{'invalid': !doctor.firstName && savePressed}"
+                                                 placeholder=""
+                                                 class="form-control" ng-model="doctor.firstName">
+            </div>
+            <div class="form-group">
+                <label>Фамилия</label> <input type = "text" ng-class="{'invalid': !doctor.lastName && savePressed}"
+                                                placeholder=""
+                                                class="form-control" ng-model="doctor.lastName">
+            </div>
+            <div class="form-group">
+                <label>Отчество</label> <input type="text" ng-class="{'invalid': !doctor.middleName && savePressed}"
+                                              placeholder=""
+                                              class="form-control" ng-model="doctor.middleName">
+            </div>
+            <div class="form-group">
+                <label>Почта</label> <input type="text" ng-class="{'invalid': !doctor.email && savePressed}"
+                                            placeholder=""
+                                            class="form-control" ng-model="doctor.email">
+            </div>
+            <div class="form-group">
+                <label>Специальность</label> <input ng-class="{'invalid': !doctor.speciality && savePressed}" type="text"
+                                                    placeholder=""
+                                                    class="form-control" ng-model="doctor.speciality">
+            </div>
+            <div class="form-group">
+                <label>Наименование учреждения (место работы)</label> <input type="text" ng-class="{'invalid': !doctor.institutionName && savePressed}"
+                                              placeholder=""
+                                              class="form-control" ng-model="doctor.institutionName">
+            </div>
+            <div class="form-group">
+                <label>Адрес учреждения</label> <input type="text" ng-class="{'invalid': !doctor.addressOfInstitution && savePressed}"
+                                              placeholder=""
+                                              class="form-control" ng-model="doctor.addressOfInstitution">
+            </div>
+            <div class="form-group">
+                <label>Рабочий телефон</label> <input type="text" ng-class="{'invalid': !doctor.workPhoneNumber && savePressed}"
+                                              placeholder=""
+                                              class="form-control" ng-model="doctor.workPhoneNumber">
+            </div>
+            <div class="form-group">
+                <label>Сотовый телефон</label> <input type="text" ng-class="{'invalid': !doctor.mobilePhoneNumber && savePressed}"
+                                              placeholder=""
+                                              class="form-control" ng-model="doctor.mobilePhoneNumber">
+            </div>
+            
+           
+        </form>
+        <p ng-show="message">{{message}}</p>
+    </div>
+    <div class="modal-footer">
+        <button ng-disabled="savePressed && (!doctor.speciality || !doctor.firstName || !doctor.lastName || !doctor.email || !doctor.middleName || !doctor.institutionName || !doctor.addressOfInstitution || !doctor.workPhoneNumber || !doctor.mobilePhoneNumber)"  class="btn btn-primary pull-right m-t-n-xs" ng-click="saveModal()">
+                Сохранить
+        </button>
+    </div>
+</div>
