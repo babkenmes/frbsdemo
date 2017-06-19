@@ -14,6 +14,11 @@ User.findOne({ username: "admin" }, function (err, adminUser) {
             username: "admin",
             firstName: "John",
             lastName:"Angry",
+			apiKey: "a",
+			authDomain: "a",
+			databaseURL: "a",
+			storageBucket: "a",
+			messagingSenderId: "a",
             password: "pass@world1",
             role: "admin"
         });
