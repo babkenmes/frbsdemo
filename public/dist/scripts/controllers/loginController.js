@@ -15,8 +15,10 @@ app.controller('LoginCtrl', ['$scope', '$state', 'authService', '$timeout','$win
         }
         $scope.login = function () {
             authService.login($scope.loginData).then(function (response) {
-                //$state.go('index.users');
-				$window.location.href = "/polymer";
+              	if(authService.authentication.role=="admin")
+					$state.go('index.users');
+				else
+					$window.location.href = "/polymer";
             },
             function (err) {
                 $scope.message.status = "danger";

@@ -4,7 +4,7 @@
   "ClientSecret": "abc123456",
   "publicFolderRelativePath": "./public",
   "mongoose": {
-    "uri": "mongodb://localhost/NodaAppDemo"
+   "uri": "mongodb://mongo1.gear.host:27001/nodaappdemo"
   },
   "websiteUrl":  "https://localhost:1337"
 }

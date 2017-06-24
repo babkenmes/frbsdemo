@@ -3,7 +3,11 @@ var config = require('./config');
 var User = require('./../models/User');
 var Client = require('./../models/Client');
 mongoose.Promise = global.Promise;
-mongoose.connect(config.get('mongoose:uri'));
+var options = {
+  user: 'nodaappdemo',
+  pass: 'Am5D2S-B!Ugu'
+};
+mongoose.connect(config.get('mongoose:uri'),options);
 var db = mongoose.connection;
 User.findOne({ username: "admin" }, function (err, adminUser) {
     if (err) {
@@ -14,11 +18,11 @@ User.findOne({ username: "admin" }, function (err, adminUser) {
             username: "admin",
             firstName: "John",
             lastName:"Angry",
-			apiKey: "a",
-			authDomain: "a",
-			databaseURL: "a",
-			storageBucket: "a",
-			messagingSenderId: "a",
+			apiKey: "admin",
+			authDomain: "admin",
+			databaseURL: "admin",
+			storageBucket: "admin",
+			messagingSenderId: "admin",
             password: "pass@world1",
             role: "admin"
         });

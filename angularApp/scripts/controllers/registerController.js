@@ -4,7 +4,10 @@ app.controller('registerCtrl', function ($scope, $state, $sce, $timeout, $uibMod
     $scope.register = function () {
         userService.register($scope.User).then(function (result) {
 			authService.login($scope.User).then(function (response) {
-                $state.go('index.users');
+               	if(authService.user.role=="admin")
+					$state.go('index.users');
+				else
+					$window.location.href = "/polymer";
             },
             function (err) {
                 $scope.message.status = "danger";

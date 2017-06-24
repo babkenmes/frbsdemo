@@ -1,6 +1,6 @@
 ﻿'use strict';
-app.controller('userCtrl', function ($scope, $state, $timeout, $uibModal, userService, roleNames) {
-
+app.controller('userCtrl', function ($scope, $state, $timeout, $uibModal, userService, roleNames, authService) {
+	$scope.isAdmin = authService.authentication.role == "admin";
     $scope.Users = [];
     $scope.User = {};
     $scope.roles = roleNames;
