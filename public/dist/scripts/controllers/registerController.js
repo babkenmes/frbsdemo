@@ -1,6 +1,7 @@
 ﻿'use strict';
-app.controller('registerCtrl', function ($scope, $state, $sce, $timeout, $uibModal, userService, roleNames, authService) {
+app.controller('registerCtrl', function ($scope, $state, $sce, $timeout, $uibModal, userService, roleNames, authService, $window) {
     $scope.User = {};
+    $scope.message = {};
     $scope.register = function () {
         userService.register($scope.User).then(function (result) {
 			authService.login($scope.User).then(function (response) {
@@ -20,7 +21,13 @@ app.controller('registerCtrl', function ($scope, $state, $sce, $timeout, $uibMod
         },
         function (err) {
             ///TODO implement better handling
-            $scope.message = err.message;
+            if(err.data.indexOf("duplicate key error") > -1)
+            {
+                $scope.message.text = "There is already user " + $scope.User.username + " please try anthoer username";
+            }
+            else{
+                $scope.message.text = err.data;
+            }
             console.log("error");
         });
     };

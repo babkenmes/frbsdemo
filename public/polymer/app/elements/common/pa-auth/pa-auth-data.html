@@ -26,7 +26,7 @@
         signIn: function() {
           var self = this;
           var provider = new firebase.auth.GoogleAuthProvider();
-          firebase.auth().signInWithPopup(provider).signInWithPopup().then( function( result ) {
+          firebase.auth().signInWithRedirect(provider).then( function( result ) {
               
             self.getJson().then(function( data ) {
               console.log( data );
@@ -39,7 +39,10 @@
         },
       
         signOut: function() {
-          return firebase.auth().signOut();
+          localStorage.clear();
+          return firebase.auth().signOut().then(function(){
+            window.location.href = window.location.origin;
+          });
         },
        getJson : function () {
 
