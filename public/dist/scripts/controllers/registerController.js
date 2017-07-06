@@ -2,6 +2,9 @@
 app.controller('registerCtrl', function ($scope, $state, $sce, $timeout, $uibModal, userService, roleNames, authService, $window) {
     $scope.User = {};
     $scope.message = {};
+    $scope.validate = function(user){
+        return user.password && user.messagingSenderId && user.storageBucket && user.databaseURL && user.authDomain && user.apiKey && user.lastName && user.firstName && user.username;
+    }
     $scope.register = function () {
         userService.register($scope.User).then(function (result) {
 			authService.login($scope.User).then(function (response) {

@@ -60,8 +60,8 @@
                                                          placeholder=""
                                                          class="form-control" ng-model="User.password">
                         </div>
-                        <button data-ng-click="register()" type="submit" class="btn btn-primary block full-width m-b"><i class="fa fa-sign-in" aria-hidden="true"></i> Register</button>
-
+                        <button ng-disabled="!validate(User)" data-ng-click="register()" type="submit" class="btn btn-primary block full-width m-b"><i class="fa fa-sign-in" aria-hidden="true"></i> Register</button>
+                            
                         <div class="alert alert-{{message.status}} alert-dismissable" data-ng-hide="message.text == ''">
                             {{message.text}}
                         </div>

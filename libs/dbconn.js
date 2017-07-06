@@ -3,11 +3,7 @@ var config = require('./config');
 var User = require('./../models/User');
 var Client = require('./../models/Client');
 mongoose.Promise = global.Promise;
-var options = {
-  user: 'nodaappdemo',
-  pass: 'Am5D2S-B!Ugu'
-};
-mongoose.connect(config.get('mongoose:uri'),options);
+mongoose.connect(config.get('mongoose:uri'));
 var db = mongoose.connection;
 User.findOne({ username: "admin" }, function (err, adminUser) {
     if (err) {

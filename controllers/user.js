@@ -15,6 +15,7 @@ router.use(function (req, res, next) {
 			console.log(user);
 			req.user.queryConditions = {};
             if (req.user.role == constants.roles.adminRoleName) {
+                req.user.queryConditions["role"] = constants.roles.simpleUserRoleName;
                 next();
             }
 			else if(req.user.role == constants.roles.simpleUserRoleName){
