@@ -2,6 +2,10 @@
 app.controller('registerCtrl', function ($scope, $state, $sce, $timeout, $uibModal, userService, roleNames, authService, $window) {
     $scope.User = {};
     $scope.message = {};
+    var auth = authService.authentication;
+    if (auth && auth.isAuth === true) {
+        $state.go('index.users');
+    }
     $scope.validate = function(user){
         return user.password && user.messagingSenderId && user.storageBucket && user.databaseURL && user.authDomain && user.apiKey && user.lastName && user.firstName && user.username;
     }
